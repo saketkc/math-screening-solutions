@@ -77,15 +77,13 @@ for n=2</p>
 <p>To calculate: <span class="math">\(\sigma^2=Var(R_n)\)</span></p>
 <p><span class="math">\(Var(R_n) = E(R_n^2)-(ER_n)^2\)</span></p>
 <p>So we focus on calculating <span class="math">\(ER_n^2\)</span>:</p>
-<p>$$
-\begin{align}
-ER_n^2 &amp;= E((1+\sum_{i=2}^{n-1}I_i)^2)\
- &amp;= E(1+(\sum_{i=1}^{n-1}I_i)^2 + 2\sum_{i=2}^{n-1}I_i))\
- &amp;= E(1+(\sum{i=2}^{n-1}I_i^2 + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j) + 2\sum_{i=2}^{n-1}I_i)\
- &amp;= 1 + (n-2)\times(2pq) + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j + 2(n-2)(2pq) \
- &amp;= 1+3(n-2)\times(2pq) + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j\</p>
-<p>\end{align}
-$$</p>
+<div class="math">$$\begin{align}
+ER_n^2 &amp;= E((1+\sum_{i=2}^{n-1}I_i)^2)\\
+ &amp;= E(1+(\sum_{i=1}^{n-1}I_i)^2 + 2\sum_{i=2}^{n-1}I_i))\\
+ &amp;= E(1+(\sum{i=2}^{n-1}I_i^2 + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j) + 2\sum_{i=2}^{n-1}I_i)\\
+ &amp;= 1 + (n-2)\times(2pq) + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j + 2(n-2)(2pq) \\
+ &amp;= 1+3(n-2)\times(2pq) + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j\\
+\end{align}$$</div>
 <p>In order to calculate <span class="math">\(EI_iI_j\)</span>, we consider following 3 cases:</p>
 <ol>
 <li>
@@ -112,7 +110,14 @@ Substitute in (skipping/TODO)
 <p>$\phi_X(\bf{t}) = E[e^{i\bf{t^T}X}] = e^{-i\bf{t^T}\mu- \frac{1}{2}\bf{t^T}\sum^2 \bf{t}} = $</p>
 <p>Now, <span class="math">\(Y=c^TX\)</span> where <span class="math">\(c=[c_1,c_2 \dots c_n]\)</span> (<span class="math">\(Y=\sum_{i=1}^{N}c_iX_i\)</span>)</p>
 <p>Thus,</p>
-<p><span class="math">\(\phi_Y(\bf{t}) = E[e^{i\bf{t^T}Y}] = E[e^{i\bf{t}c^TX}] = \phi_X(tc^T) =  e^{-ic^T\bf{t}\mu- \frac{1}{2}\bf{t}^Tc\sum^2 \bf{t}c^T\)</span></p>
+<div class="math">$$
+\begin{align}
+\phi_Y(\bf{t}) &amp;= E[e^{i\bf{t^T}Y}]\\
+            &amp;= E[e^{i\bf{t}c^TX}]\\
+            &amp;= \phi_X(tc^T)\\
+            &amp;=  e^{-ic^T\bf{t}\mu - \frac{1}{2}\bf{t}^Tc\sum^2 \bf{t}c^T}
+\end{align}
+$$</div>
 <p>and thus comparing with the characteristic function we started with:</p>
 <p><span class="math">\(Y \sim N(c^T\mu, a\sum a^T)\)</span></p>
 <p>TODO: Check again the transposes</p>
