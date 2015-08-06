@@ -1,6 +1,7 @@
 title: MATH505a 2006 Spring
 date: 2015-08-07
 
+[Link to Paper](http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf)
 ## Problem 1
 
 Define an indicator variable $I_i$ as:
