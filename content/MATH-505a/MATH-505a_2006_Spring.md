@@ -1,4 +1,4 @@
-title: 2006 Spring
+title: MATH505a 2006 Spring
 date: 2015-08-07
 
 ## Problem 1
@@ -7,7 +7,7 @@ Define an indicator variable $I_i$ as:
 
 $$
 I_i = \begin{cases}
-1 & \text{if $i^{th}$ and $(i+1)^{th} cards are different (H,T) or (T,H)$},\\
+1 & \text{if $i^{th}$ and $(i+1)^{th}$ cards are different (H,T) or (T,H)},\\
 0 & \text{otherwise}
 \end{cases}
 $$
@@ -52,16 +52,13 @@ $Var(R_n) = E(R_n^2)-(ER_n)^2$
 
 So we focus on calculating $ER_n^2$:
 
-$$
-\begin{align}
+$$\begin{align}
 ER_n^2 &= E((1+\sum_{i=2}^{n-1}I_i)^2)\\
  &= E(1+(\sum_{i=1}^{n-1}I_i)^2 + 2\sum_{i=2}^{n-1}I_i))\\
  &= E(1+(\sum{i=2}^{n-1}I_i^2 + 2\sum{2\leq i < j}^{n-1} I_iI_j) + 2\sum_{i=2}^{n-1}I_i)\\
  &= 1 + (n-2)\times(2pq) + 2\sum{2\leq i < j}^{n-1} I_iI_j + 2(n-2)(2pq) \\
  &= 1+3(n-2)\times(2pq) + 2\sum{2\leq i < j}^{n-1} I_iI_j\\
-
-\end{align}
-$$
+\end{align}$$
 
 In order to calculate $EI_iI_j$, we consider following 3 cases:
 
@@ -97,7 +94,15 @@ Now, $Y=c^TX$ where $c=[c_1,c_2 \dots c_n]$ ($Y=\sum_{i=1}^{N}c_iX_i$)
 
 Thus,
 
-$\phi_Y(\bf{t}) = E[e^{i\bf{t^T}Y}] = E[e^{i\bf{t}c^TX}] = \phi_X(tc^T) =  e^{-ic^T\bf{t}\mu- \frac{1}{2}\bf{t}^Tc\sum^2 \bf{t}c^T$
+
+$$
+\begin{align}
+\phi_Y(\bf{t}) &= E[e^{i\bf{t^T}Y}]\\
+            &= E[e^{i\bf{t}c^TX}]\\
+            &= \phi_X(tc^T)\\
+            &=  e^{-ic^T\bf{t}\mu - \frac{1}{2}\bf{t}^Tc\sum^2 \bf{t}c^T}
+\end{align}
+$$
 
 and thus comparing with the characteristic function we started with:
 
