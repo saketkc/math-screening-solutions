@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>2006 Spring</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+<a href="https://github.com/saketkc">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
+</a>
+        <header id="banner" class="body">
+                <h1><a href="./">Screening Exam Solutions </a></h1>
+                <nav><ul>
+                    <li><a href="https://github.com/saketkc/math-screening-solutions/tree/master/content">Contribute</a></li>
+                    <li class="active"><a href="./category/math-505a.html">MATH-505a</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./2006-spring.html" rel="bookmark"
+           title="Permalink to 2006 Spring">2006 Spring</a></h1>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="saketkc">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-08-07T00:00:00+02:00">
+                Published: Fri 07 August 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/saket-choudhary.html">Saket Choudhary</a>
+        </address>
+<p>In <a href="./category/math-505a.html">MATH-505a</a>. </p>
+
+</footer><!-- /.post-info -->      <h2>Problem 1</h2>
+<p>Define an indicator variable <span class="math">\(I_i\)</span> as:</p>
+<div class="math">$$
+I_i = \begin{cases}
+1 &amp; \text{if $i^{th}$ and $(i+1)^{th} cards are different (H,T) or (T,H)$},\\
+0 &amp; \text{otherwise}
+\end{cases}
+$$</div>
+<p>Now the number of runs in a sequence of <span class="math">\(n\)</span> coin tosses is given by:
+</p>
+<div class="math">$$
+R_n = 1+ \sum_{i=2}^{n-1} I_i \forall n\geq 3
+$$</div>
+<p>Thus, </p>
+<div class="math">$$
+\begin{align}
+ER_n &amp;= 1 + \sum_{i=2}^{n-1} EI_i \\
+     &amp;= 1 + \sum_{i=2}^{n-1} P(I_i=1)
+\end{align}
+$$</div>
+<p><span class="math">\(P(I_i=1)\)</span>  is given by : <span class="math">\(P(I_i=1)=p\times q + q \times p\)</span>
+(heads followed by tails or tails followed by heads)</p>
+<p>And hence, 
+</p>
+<div class="math">$$
+ER_n = 1+(n-2) \times (2pq)
+$$</div>
+<p>Check:
+- <span class="math">\(ER_1 = 1\)</span> and that is <span class="math">\(ER_1=1\)</span>
+- <span class="math">\(P(R_2=1)=p^2 + q^2\)</span> and <span class="math">\(P(R_2=2)=pq+qp=2pq\)</span> thus
+<span class="math">\(E(R_2)=(p^2+q^2)+4pq = (p+q)^2+2pq = 1+2pq\)</span> which is what <span class="math">\(ER_n\)</span> formula gives us
+for n=2</p>
+<h3>Variance Calculation:</h3>
+<p>To calculate: <span class="math">\(\sigma^2=Var(R_n)\)</span></p>
+<p><span class="math">\(Var(R_n) = E(R_n^2)-(ER_n)^2\)</span></p>
+<p>So we focus on calculating <span class="math">\(ER_n^2\)</span>:</p>
+<p>$$
+\begin{align}
+ER_n^2 &amp;= E((1+\sum_{i=2}^{n-1}I_i)^2)\
+ &amp;= E(1+(\sum_{i=1}^{n-1}I_i)^2 + 2\sum_{i=2}^{n-1}I_i))\
+ &amp;= E(1+(\sum{i=2}^{n-1}I_i^2 + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j) + 2\sum_{i=2}^{n-1}I_i)\
+ &amp;= 1 + (n-2)\times(2pq) + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j + 2(n-2)(2pq) \
+ &amp;= 1+3(n-2)\times(2pq) + 2\sum{2\leq i &lt; j}^{n-1} I_iI_j\</p>
+<p>\end{align}
+$$</p>
+<p>In order to calculate <span class="math">\(EI_iI_j\)</span>, we consider following 3 cases:</p>
+<ol>
+<li>
+<p>Case 1: <span class="math">\(j-i=1\)</span>, then <span class="math">\(P(I_i=1, I_j=1)\)</span> = Probaility that <span class="math">\(i^{th}, (i+1)^{th} \mathrm{and} (i+2)^{th}\)</span> cards are different. For <span class="math">\(i=2\)</span> to <span class="math">\(i={n-1}\)</span>
+there are <span class="math">\((n-2-1)=n-3\)</span> such terms and <span class="math">\(P(I_i,I_j=1)= pqp+qpq=pq\)</span></p>
+</li>
+<li>
+<p>Case 2: <span class="math">\(j-i&gt;=2\)</span>, then <span class="math">\(P(I_i=1,I_j=1) = P(I_i=1)P(I_j=1)\)</span> , that is these events are independent unless they occur next to each other
+as in Case 1. and hence <span class="math">\(P(I_i=1,I_j=1)=P(I_i=1)P(I_j=1) = (pq)^2\)</span> and there are <span class="math">\((n-4)\)</span> such ways to choose</p>
+</li>
+</ol>
+<p>Thus,
+<span class="math">\(ER_n^2 = 1+6pq(n-2)+2\times((n-3)\times (pq)+(n-4)\times(pq)^2)\)</span>
+Substitute in (skipping/TODO)
+<span class="math">\(Var(R_n) = ER_n^2-(ER_n)^2\)</span></p>
+<h2>Problem 2</h2>
+<p><span class="math">\(X = \{\}X_1,X_2 \dots, X_n)\)</span> and <span class="math">\(Y=\sum_{i=1}^{N}c_iX_i\)</span></p>
+<p>To determine :
+- Distribution of Y</p>
+<p>iWe use characteristic functions</p>
+<p>Using the <a href="https://en.wikipedia.org/wiki/Normal_distribution#Fourier_transform_and_characteristic_function">characteristic function of a normal RV</a>:</p>
+<p>$\phi_X(t) = E[e^{itX}] = e^{-it\mu- \frac{1}{2}\sigma^2t^2} = $</p>
+<p>For multivariate case:</p>
+<p>$\phi_X(\bf{t}) = E[e^{i\bf{t^T}X}] = e^{-i\bf{t^T}\mu- \frac{1}{2}\bf{t^T}\sum^2 \bf{t}} = $</p>
+<p>Now, <span class="math">\(Y=c^TX\)</span> where <span class="math">\(c=[c_1,c_2 \dots c_n]\)</span> (<span class="math">\(Y=\sum_{i=1}^{N}c_iX_i\)</span>)</p>
+<p>Thus,</p>
+<p><span class="math">\(\phi_Y(\bf{t}) = E[e^{i\bf{t^T}Y}] = E[e^{i\bf{t}c^TX}] = \phi_X(tc^T) =  e^{-ic^T\bf{t}\mu- \frac{1}{2}\bf{t}^Tc\sum^2 \bf{t}c^T\)</span></p>
+<p>and thus comparing with the characteristic function we started with:</p>
+<p><span class="math">\(Y \sim N(c^T\mu, a\sum a^T)\)</span></p>
+<p>TODO: Check again the transposes</p>
+<h2>Problem 3</h2>
+<p>TODO</p>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-55540107-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+</body>
+</html>
