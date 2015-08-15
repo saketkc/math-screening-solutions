@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2015-08-06T15:57:48-00:00</lastmod>
+<lastmod>2015-08-14T19:30:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2015-08-06T15:57:48-00:00</lastmod>
+<lastmod>2015-08-14T19:30:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2015-08-06T15:57:48-00:00</lastmod>
+<lastmod>2015-08-14T19:30:02-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2015-08-06T15:57:48-00:00</lastmod>
+<lastmod>2015-08-14T19:30:02-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/math-541a-2014-spring.html</loc>
+<lastmod>2015-08-14T00:00:00+02:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -46,8 +53,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/category/math-541a.html</loc>
+<lastmod>2015-08-14T00:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/author/saket-choudhary.html</loc>
-<lastmod>2015-08-07T00:00:00+00:09</lastmod>
+<lastmod>2015-08-14T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
