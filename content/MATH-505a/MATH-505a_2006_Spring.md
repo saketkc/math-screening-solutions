@@ -56,9 +56,9 @@ So we focus on calculating $ER_n^2$:
 $$\begin{align}
 ER_n^2 &= E((1+\sum_{i=2}^{n-1}I_i)^2)\\
  &= E(1+(\sum_{i=1}^{n-1}I_i)^2 + 2\sum_{i=2}^{n-1}I_i))\\
- &= E(1+(\sum{i=2}^{n-1}I_i^2 + 2\sum{2\leq i < j}^{n-1} I_iI_j) + 2\sum_{i=2}^{n-1}I_i)\\
- &= 1 + (n-2)\times(2pq) + 2\sum{2\leq i < j}^{n-1} I_iI_j + 2(n-2)(2pq) \\
- &= 1+3(n-2)\times(2pq) + 2\sum{2\leq i < j}^{n-1} I_iI_j\\
+ &= E(1+(\sum{i=2}^{n-1}I_i^2 + 2\sum_{2\leq i < j}^{n-1} I_iI_j) + 2\sum_{i=2}^{n-1}I_i)\\
+ &= 1 + (n-2)\times(2pq) + 2\sum_{2\leq i < j}^{n-1} I_iI_j + 2(n-2)(2pq) \\
+ &= 1+3(n-2)\times(2pq) + 2\sum_{2\leq i < j}^{n-1} I_iI_j\\
 \end{align}$$
 
 In order to calculate $EI_iI_j$, we consider following 3 cases:
