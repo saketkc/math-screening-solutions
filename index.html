@@ -36,65 +36,66 @@
         </address>
 <p>In <a href="./category/math-541a.html">MATH-541a</a>. </p>
 
-</footer><!-- /.post-info -->
-
-<style type="text/css">
-.main-container {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
-}
-img { 
-  max-width:100%; 
-  height: auto; 
-}
-</style>
-<div class="container-fluid main-container">
-
-
-<div id="header">
-<h1 class="title">MATH-541a 2014 Spring</h1>
-<h4 class="date"><em>2015-08-14</em></h4>
-</div>
-
-
-<div id="source" class="section level2">
-<h2>Source</h2>
-<p><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf"><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf">http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf</a></a></p>
-</div>
-<div id="problem-1" class="section level2">
+</footer><!-- /.post-info --><h2>Source</h2>
+<p><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf">http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf</a></p>
 <h2>Problem 1</h2>
 <p>Given:</p>
-<p>Known values <span class="math">\(x_{i,1}, x_{i,2}\)</span> for <span class="math">\(1  \leq i \leq n\)</span></p>
-</div>
+<p><span class="math">\(x_{i,1}, x_{i,2}\)</span> :  Known values 
+For <span class="math">\(1  \leq i \leq n\)</span>:
+<span class="math">\(Z_i = \beta_1x_{i,1} +\epsilon_i $ and
+$Y_i = \beta_1x_{i,1} +\beta_2x_{i,2} + \epsilon_i\)</span>
+<span class="math">\(\epsilon_i \sim N(0,1)\)</span></p>
+<h3>(a)</h3>
+<p>Given <span class="math">\({\bf{Z}} =(Z_1,Z_2,\dots,Z_n)\)</span> find MLE estimate of <span class="math">\(\beta_1\)</span>:</p>
+<p>Since, <span class="math">\(\epsilon_i \sim N(0,1)\)</span> <span class="math">\(\implies\)</span> <span class="math">\(Z_i \sim N(\beta_1x_{i,1}, 1)\)</span> for given <span class="math">\(\beta_1\)</span>
+The likelihood function is given by:</p>
+<p><span class="math">\(L(\beta_1|\textbf{Z}) = \frac{e^{-\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2}}{(\sqrt{2\pi})^n}\)</span></p>
+<p><span class="math">\(LL = log(L(\beta_1|\textbf{Z})) = -\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2 - \frac{n}{2}log(2\pi)\)</span></p>
+<p><span class="math">\(\frac{dLL}{d\beta_1} = \sum_{i=1}^n (Z_i-\beta_1x_{i,1})x_{i,1}\)</span></p>
+<p>and hence</p>
+<p><span class="math">\(\hat\beta_1 = \frac{\sum Z_ix_{i,1}}{\sum x_{i,1}^2}\)</span></p>
+<p><span class="math">\(\frac{d^2LL}{d\beta_1} = -\sum x_{i,1}^2\)</span> and hence <span class="math">\(\hat \beta_1\)</span> is in fact attains the maxima.</p>
+<p>Now, <span class="math">\(E\hat\beta_1 = \frac{E(\sum Z_ix_{i,1})}{\sum x_{i,1}^2} = \frac{\sum x_{i,1}E(Z_i)}{\sum x_{i,1}^2} = \beta_1\)</span></p>
+<p>and hence the MLE estimate pf <span class="math">\(\hat \beta_1\)</span> is an unibased estimator of <span class="math">\(\beta_1\)</span></p>
+<h3>TODO Cramer-Rao Condition check?</h3>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
 
-
-</div>
-
-<script>
-
-// add bootstrap table styles to pandoc tables
-$(document).ready(function () {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
-});
-
-</script>
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
-                </article>
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
