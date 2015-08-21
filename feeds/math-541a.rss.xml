@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>/</link><description></description><atom:link href="/feeds/math-541a.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 14 Aug 2015 00:00:00 +0200</lastBuildDate><item><title>MATH-541a 2014 Spring</title><link>/math-541a-2014-spring.html</link><description>&lt;h2&gt;Source&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Problem 1&lt;/h2&gt;
+&lt;p&gt;Given:&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(x_{i,1}, x_{i,2}\)&lt;/span&gt; :  Known values 
+For &lt;span class="math"&gt;\(1  \leq i \leq n\)&lt;/span&gt;:
+&lt;span class="math"&gt;\(Z_i = \beta_1x_{i,1} +\epsilon_i $ and
+$Y_i = \beta_1x_{i,1} +\beta_2x_{i,2} + \epsilon_i\)&lt;/span&gt;
+&lt;span class="math"&gt;\(\epsilon_i \sim N(0,1)\)&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;(a)&lt;/h3&gt;
+&lt;p&gt;Given &lt;span class="math"&gt;\({\bf{Z}} =(Z_1,Z_2,\dots,Z_n)\)&lt;/span&gt; find MLE estimate of &lt;span class="math"&gt;\(\beta_1\)&lt;/span&gt;:&lt;/p&gt;
+&lt;p&gt;Since, &lt;span class="math"&gt;\(\epsilon_i \sim N(0,1)\)&lt;/span&gt; &lt;span class="math"&gt;\(\implies\)&lt;/span&gt; &lt;span class="math"&gt;\(Z_i \sim N(\beta_1x_{i,1}, 1)\)&lt;/span&gt; for given &lt;span class="math"&gt;\(\beta_1\)&lt;/span&gt;
+The likelihood function is given by:&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(L(\beta_1|\textbf{Z}) = \frac{e^{-\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2}}{(\sqrt{2\pi})^n}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(LL = log(L(\beta_1|\textbf{Z})) = -\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2 - \frac{n}{2}log(2\pi)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(\frac{dLL}{d\beta_1} = \sum_{i=1}^n (Z_i-\beta_1x_{i,1})x_{i,1}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and hence&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(\hat\beta_1 = \frac{\sum Z_ix_{i,1}}{\sum x_{i,1}^2}\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(\frac{d^2LL}{d\beta_1} = -\sum x_{i,1}^2\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(\hat \beta_1\)&lt;/span&gt; is in fact attains the maxima.&lt;/p&gt;
+&lt;p&gt;Now, &lt;span class="math"&gt;\(E\hat\beta_1 = \frac{E(\sum Z_ix_{i,1})}{\sum x_{i,1}^2} = \frac{\sum x_{i,1}E(Z_i)}{\sum x_{i,1}^2} = \beta_1\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;and hence the MLE estimate pf &lt;span class="math"&gt;\(\hat \beta_1\)&lt;/span&gt; is an unibased estimator of &lt;span class="math"&gt;\(\beta_1\)&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;TODO Cramer-Rao Condition check?&lt;/h3&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 14 Aug 2015 00:00:00 +0200</pubDate><guid>tag:,2015-08-14:math-541a-2014-spring.html</guid><category>MATH-541a</category><category>2014</category><category>Spring</category></item></channel></rss>
