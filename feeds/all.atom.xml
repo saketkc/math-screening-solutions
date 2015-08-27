@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2015-08-14T00:00:00+02:00</updated><entry><title>MATH-541a 2014 Spring</title><link href="/math-541a-2014-spring.html" rel="alternate"></link><updated>2015-08-14T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:,2015-08-14:math-541a-2014-spring.html</id><summary type="html">&lt;h2&gt;Source&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/math-screening-solutions/</id><updated>2015-08-14T00:00:00+02:00</updated><entry><title>MATH-541a 2014 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html" rel="alternate"></link><updated>2015-08-14T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-14:math-screening-solutions/math-541a-2014-spring.html</id><summary type="html">&lt;h2&gt;Source&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Given:&lt;/p&gt;
@@ -58,7 +58,7 @@ The likelihood function is given by:&lt;/p&gt;
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="MATH-541a"></category><category term="2014"></category><category term="Spring"></category></entry><entry><title>MATH505a 2006 Spring</title><link href="/math505a-2006-spring.html" rel="alternate"></link><updated>2015-08-07T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:,2015-08-07:math505a-2006-spring.html</id><summary type="html">&lt;h2&gt;Paper&lt;/h2&gt;
+&lt;/script&gt;</summary><category term="MATH-541a"></category><category term="2014"></category><category term="Spring"></category></entry><entry><title>MATH505a 2006 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html" rel="alternate"></link><updated>2015-08-07T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</id><summary type="html">&lt;h2&gt;Paper&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Define an indicator variable &lt;span class="math"&gt;\(I_i\)&lt;/span&gt; as:&lt;/p&gt;

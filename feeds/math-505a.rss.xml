@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>/</link><description></description><atom:link href="/feeds/math-505a.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 07 Aug 2015 00:00:00 +0200</lastBuildDate><item><title>MATH505a 2006 Spring</title><link>/math505a-2006-spring.html</link><description>&lt;h2&gt;Paper&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/math-505a.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 07 Aug 2015 00:00:00 +0200</lastBuildDate><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h2&gt;Paper&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Define an indicator variable &lt;span class="math"&gt;\(I_i\)&lt;/span&gt; as:&lt;/p&gt;
@@ -120,4 +120,4 @@ $$&lt;/div&gt;
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 07 Aug 2015 00:00:00 +0200</pubDate><guid>tag:,2015-08-07:math505a-2006-spring.html</guid></item></channel></rss>
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 07 Aug 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</guid></item></channel></rss>
