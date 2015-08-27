@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Saket Choudhary'
 SITENAME = u'Screening Exam Solutions'
-SITEURL = ''
+SITEURL = 'http://www.saket-choudhary.me/math-screening-solutions/'
 
 PATH = 'content'
 
@@ -13,8 +13,9 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
+FEED_DOMAIN = SITEURL
+FEED_ALL_RSS = 'feeds/all.rss.xml'
+CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
@@ -28,7 +29,8 @@ LINKS = ()
 # Social widget
 #SOCIAL = (('You can add links in your config file', '#'),
 #         ('Another social link', '#'),)
-SOCIAL = ()
+SOCIAL = (('twitter', 'https://twitter.com/saketkc'),
+                    ('github', 'https://github.com/saketkc'),)
 DEFAULT_PAGINATION = 50
 
 # Uncomment following line if you want document-relative URLs when developing
