@@ -10,15 +10,16 @@ E[Y]=E[E[Y|X]]=E[X]=\mu_x
 $$&lt;/div&gt;
 &lt;p&gt;Thus, &lt;span class="math"&gt;\(\mu_y=\mu_x\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Also,
-$$
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
 \begin{align}
-Cov(X,Y) &amp;amp;=E[XY]-E[X]E[Y]\
-&amp;amp;= E[E[XY|X]]-\mu_x^2\
-&amp;amp;= E[XE[Y|X]]-\mu_x^2\
-&amp;amp;= E[X^2]-\mu_x^2\
-&amp;amp;= \sigma_x^2&lt;/p&gt;
-&lt;p&gt;\end{align}
-$$&lt;/p&gt;
+Cov(X,Y) &amp;amp;=E[XY]-E[X]E[Y]\\
+&amp;amp;= E[E[XY|X]]-\mu_x^2\\
+&amp;amp;= E[XE[Y|X]]-\mu_x^2\\
+&amp;amp;= E[X^2]-\mu_x^2\\
+&amp;amp;= \sigma_x^2
+\end{align}
+$$&lt;/div&gt;
 &lt;p&gt;Repeating the above with &lt;span class="math"&gt;\(E[XY]= E[E[XY|Y]]\)&lt;/span&gt; would give 
 &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_y^2\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_x^2=\sigma_y^2=Var(X)\)&lt;/span&gt;
 which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/p&gt;
