@@ -26,7 +26,6 @@ Cov(X,Y) &=E[XY]-E[X]E[Y]\\
 &= E[XE[Y|X]]-\mu_x^2\\
 &= E[X^2]-\mu_x^2\\
 &= \sigma_x^2
-
 \end{align}
 $$
 
@@ -35,4 +34,4 @@ $Cov(X,Y)=\sigma_y^2$ and hence $Cov(X,Y)=\sigma_x^2=\sigma_y^2=Var(X)$
 which implies $X=Y$ or $P(X=Y)=1$
 
 Note, we implicitly used the requirement of the variance being finite[This is what is implied by the function being squared integrable: 
-$|f(X)|^2dx < \infty$
+$\int |f(X)|^2dx < \infty$
