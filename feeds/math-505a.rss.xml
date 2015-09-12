@@ -24,7 +24,7 @@ $$&lt;/div&gt;
 &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_y^2\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_x^2=\sigma_y^2=Var(X)\)&lt;/span&gt;
 which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Note, we implicitly used the requirement of the variance being finite[This is what is implied by the function being squared integrable: 
-&lt;span class="math"&gt;\(|f(X)|^2dx &amp;lt; \infty\)&lt;/span&gt;&lt;/p&gt;
+&lt;span class="math"&gt;\(\int |f(X)|^2dx &amp;lt; \infty\)&lt;/span&gt;&lt;/p&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
