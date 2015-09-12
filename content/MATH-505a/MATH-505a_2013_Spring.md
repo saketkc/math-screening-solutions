@@ -1,4 +1,4 @@
-title: MATH505a 2006 Spring
+title: MATH505a 2013 Spring
 date: 2015-09-10
 
 # Paper
@@ -19,14 +19,14 @@ $$
 Thus, $\mu_y=\mu_x$
 
 Also,
-
 $$
 \begin{align}
-Cov(X,Y)&=E[XY]-E[X]E[Y]\\
+Cov(X,Y) &=E[XY]-E[X]E[Y]\\
 &= E[E[XY|X]]-\mu_x^2\\
-&= E[XE[Y|X]]-\mu__x^2\\
+&= E[XE[Y|X]]-\mu_x^2\\
 &= E[X^2]-\mu_x^2\\
 &= \sigma_x^2
+
 \end{align}
 $$
 

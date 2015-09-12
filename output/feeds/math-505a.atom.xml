@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/math-505a.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/math-screening-solutions/</id><updated>2015-09-10T00:00:00+02:00</updated><entry><title>MATH505a 2006 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html" rel="alternate"></link><updated>2015-09-10T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2006-spring.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/math-505a.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/math-screening-solutions/</id><updated>2015-09-10T00:00:00+02:00</updated><entry><title>MATH505a 2013 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html" rel="alternate"></link><updated>2015-09-10T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2013-spring.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20131/20131_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;p&gt;Given: &lt;span class="math"&gt;\(E[X|Y]=X\ and \ E[Y|X]=X\)&lt;/span&gt;&lt;/p&gt;
@@ -9,16 +9,16 @@
 E[Y]=E[E[Y|X]]=E[X]=\mu_x
 $$&lt;/div&gt;
 &lt;p&gt;Thus, &lt;span class="math"&gt;\(\mu_y=\mu_x\)&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;Also,&lt;/p&gt;
-&lt;div class="math"&gt;$$
+&lt;p&gt;Also,
+$$
 \begin{align}
-Cov(X,Y)&amp;amp;=E[XY]-E[X]E[Y]\\
-&amp;amp;= E[E[XY|X]]-\mu_x^2\\
-&amp;amp;= E[XE[Y|X]]-\mu__x^2\\
-&amp;amp;= E[X^2]-\mu_x^2\\
-&amp;amp;= \sigma_x^2
-\end{align}
-$$&lt;/div&gt;
+Cov(X,Y) &amp;amp;=E[XY]-E[X]E[Y]\
+&amp;amp;= E[E[XY|X]]-\mu_x^2\
+&amp;amp;= E[XE[Y|X]]-\mu_x^2\
+&amp;amp;= E[X^2]-\mu_x^2\
+&amp;amp;= \sigma_x^2&lt;/p&gt;
+&lt;p&gt;\end{align}
+$$&lt;/p&gt;
 &lt;p&gt;Repeating the above with &lt;span class="math"&gt;\(E[XY]= E[E[XY|Y]]\)&lt;/span&gt; would give 
 &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_y^2\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_x^2=\sigma_y^2=Var(X)\)&lt;/span&gt;
 which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/p&gt;
