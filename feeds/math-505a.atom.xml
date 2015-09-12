@@ -1,5 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/math-505a.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/math-screening-solutions/</id><updated>2015-08-07T00:00:00+02:00</updated><entry><title>MATH505a 2006 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html" rel="alternate"></link><updated>2015-08-07T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</id><summary type="html">&lt;h2&gt;Paper&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/math-505a.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/math-screening-solutions/</id><updated>2015-09-10T00:00:00+02:00</updated><entry><title>MATH505a 2013 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html" rel="alternate"></link><updated>2015-09-10T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2013-spring.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20131/20131_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem 1&lt;/h1&gt;
+&lt;p&gt;Given: &lt;span class="math"&gt;\(E[X|Y]=X\ and \ E[Y|X]=X\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To Show:&lt;/p&gt;
+&lt;h3&gt;Part (a): &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="math"&gt;$$
+E[Y]=E[E[Y|X]]=E[X]=\mu_x
+$$&lt;/div&gt;
+&lt;p&gt;Thus, &lt;span class="math"&gt;\(\mu_y=\mu_x\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Also,&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+Cov(X,Y)&amp;amp;=E[XY]-E[X]E[Y]\\
+&amp;amp;= E[E[XY|X]]-\mu_x^2\\
+&amp;amp;= E[XE[Y|X]]-\mu__x^2\\
+&amp;amp;= E[X^2]-\mu_x^2\\
+&amp;amp;= \sigma_x^2
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;Repeating the above with &lt;span class="math"&gt;\(E[XY]= E[E[XY|Y]]\)&lt;/span&gt; would give 
+&lt;span class="math"&gt;\(Cov(X,Y)=\sigma_y^2\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_x^2=\sigma_y^2=Var(X)\)&lt;/span&gt;
+which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note, we implicitly used the requirement of the variance being finite[This is what is implied by the function being squared integrable: 
+&lt;span class="math"&gt;\(|f(X)|^2dx &amp;lt; \infty\)&lt;/span&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary></entry><entry><title>MATH505a 2006 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html" rel="alternate"></link><updated>2015-08-07T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</id><summary type="html">&lt;h2&gt;Paper&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Define an indicator variable &lt;span class="math"&gt;\(I_i\)&lt;/span&gt; as:&lt;/p&gt;
