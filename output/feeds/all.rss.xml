@@ -1,5 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Fri, 14 Aug 2015 00:00:00 +0200</lastBuildDate><item><title>MATH-541a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html</link><description>&lt;h2&gt;Source&lt;/h2&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 10 Sep 2015 00:00:00 +0200</lastBuildDate><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20131/20131_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem 1&lt;/h1&gt;
+&lt;p&gt;Given: &lt;span class="math"&gt;\(E[X|Y]=X\ and \ E[Y|X]=X\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To Show:&lt;/p&gt;
+&lt;h3&gt;Part (a): &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="math"&gt;$$
+E[Y]=E[E[Y|X]]=E[X]=\mu_x
+$$&lt;/div&gt;
+&lt;p&gt;Thus, &lt;span class="math"&gt;\(\mu_y=\mu_x\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Also,&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+Cov(X,Y)&amp;amp;=E[XY]-E[X]E[Y]\\
+&amp;amp;= E[E[XY|X]]-\mu_x^2\\
+&amp;amp;= E[XE[Y|X]]-\mu__x^2\\
+&amp;amp;= E[X^2]-\mu_x^2\\
+&amp;amp;= \sigma_x^2
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;Repeating the above with &lt;span class="math"&gt;\(E[XY]= E[E[XY|Y]]\)&lt;/span&gt; would give 
+&lt;span class="math"&gt;\(Cov(X,Y)=\sigma_y^2\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_x^2=\sigma_y^2=Var(X)\)&lt;/span&gt;
+which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note, we implicitly used the requirement of the variance being finite[This is what is implied by the function being squared integrable: 
+&lt;span class="math"&gt;\(|f(X)|^2dx &amp;lt; \infty\)&lt;/span&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2006-spring.html</guid></item><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20131/20131_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem 1&lt;/h1&gt;
+&lt;p&gt;Given: &lt;span class="math"&gt;\(E[X|Y]=X\ and \ E[Y|X]=X\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To Show:&lt;/p&gt;
+&lt;h3&gt;Part (a): &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/h3&gt;
+&lt;div class="math"&gt;$$
+E[Y]=E[E[Y|X]]=E[X]=\mu_x
+$$&lt;/div&gt;
+&lt;p&gt;Thus, &lt;span class="math"&gt;\(\mu_y=\mu_x\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Also,&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+Cov(X,Y)&amp;amp;=E[XY]-E[X]E[Y]\\
+&amp;amp;= E[E[XY|X]]-\mu_x^2\\
+&amp;amp;= E[XE[Y|X]]-\mu__x^2\\
+&amp;amp;= E[X^2]-\mu_x^2\\
+&amp;amp;= \sigma_x^2
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;Repeating the above with &lt;span class="math"&gt;\(E[XY]= E[E[XY|Y]]\)&lt;/span&gt; would give 
+&lt;span class="math"&gt;\(Cov(X,Y)=\sigma_y^2\)&lt;/span&gt; and hence &lt;span class="math"&gt;\(Cov(X,Y)=\sigma_x^2=\sigma_y^2=Var(X)\)&lt;/span&gt;
+which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="math"&gt;\(P(X=Y)=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Note, we implicitly used the requirement of the variance being finite[This is what is implied by the function being squared integrable: 
+&lt;span class="math"&gt;\(|f(X)|^2dx &amp;lt; \infty\)&lt;/span&gt;&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2006-spring.html</guid></item><item><title>MATH-541a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html</link><description>&lt;h2&gt;Source&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Given:&lt;/p&gt;
@@ -59,6 +183,127 @@ The likelihood function is given by:&lt;/p&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 14 Aug 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-08-14:math-screening-solutions/math-541a-2014-spring.html</guid><category>MATH-541a</category><category>2014</category><category>Spring</category></item><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h2&gt;Paper&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Problem 1&lt;/h2&gt;
+&lt;p&gt;Define an indicator variable &lt;span class="math"&gt;\(I_i\)&lt;/span&gt; as:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+I_i = \begin{cases}
+1 &amp;amp; \text{if $i^{th}$ and $(i+1)^{th}$ cards are different (H,T) or (T,H)},\\
+0 &amp;amp; \text{otherwise}
+\end{cases}
+$$&lt;/div&gt;
+&lt;p&gt;Now the number of runs in a sequence of &lt;span class="math"&gt;\(n\)&lt;/span&gt; coin tosses is given by:
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+R_n = 1+ \sum_{i=2}^{n-1} I_i \forall n\geq 3
+$$&lt;/div&gt;
+&lt;p&gt;Thus, &lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+ER_n &amp;amp;= 1 + \sum_{i=2}^{n-1} EI_i \\
+     &amp;amp;= 1 + \sum_{i=2}^{n-1} P(I_i=1)
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(P(I_i=1)\)&lt;/span&gt;  is given by : &lt;span class="math"&gt;\(P(I_i=1)=p\times q + q \times p\)&lt;/span&gt;
+(heads followed by tails or tails followed by heads)&lt;/p&gt;
+&lt;p&gt;And hence, 
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+ER_n = 1+(n-2) \times (2pq)
+$$&lt;/div&gt;
+&lt;p&gt;Check:
+- &lt;span class="math"&gt;\(ER_1 = 1\)&lt;/span&gt; and that is &lt;span class="math"&gt;\(ER_1=1\)&lt;/span&gt;
+- &lt;span class="math"&gt;\(P(R_2=1)=p^2 + q^2\)&lt;/span&gt; and &lt;span class="math"&gt;\(P(R_2=2)=pq+qp=2pq\)&lt;/span&gt; thus
+&lt;span class="math"&gt;\(E(R_2)=(p^2+q^2)+4pq = (p+q)^2+2pq = 1+2pq\)&lt;/span&gt; which is what &lt;span class="math"&gt;\(ER_n\)&lt;/span&gt; formula gives us
+for n=2&lt;/p&gt;
+&lt;h3&gt;Variance Calculation:&lt;/h3&gt;
+&lt;p&gt;To calculate: &lt;span class="math"&gt;\(\sigma^2=Var(R_n)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(Var(R_n) = E(R_n^2)-(ER_n)^2\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;So we focus on calculating &lt;span class="math"&gt;\(ER_n^2\)&lt;/span&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$\begin{align}
+ER_n^2 &amp;amp;= E((1+\sum_{i=2}^{n-1}I_i)^2)\\
+ &amp;amp;= E(1+(\sum_{i=1}^{n-1}I_i)^2 + 2\sum_{i=2}^{n-1}I_i))\\
+ &amp;amp;= E(1+(\sum{i=2}^{n-1}I_i^2 + 2\sum_{2\leq i &amp;lt; j}^{n-1} I_iI_j) + 2\sum_{i=2}^{n-1}I_i)\\
+ &amp;amp;= 1 + (n-2)\times(2pq) + 2\sum_{2\leq i &amp;lt; j}^{n-1} I_iI_j + 2(n-2)(2pq) \\
+ &amp;amp;= 1+3(n-2)\times(2pq) + 2\sum_{2\leq i &amp;lt; j}^{n-1} I_iI_j\\
+\end{align}$$&lt;/div&gt;
+&lt;p&gt;In order to calculate &lt;span class="math"&gt;\(EI_iI_j\)&lt;/span&gt;, we consider following 3 cases:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Case 1: &lt;span class="math"&gt;\(j-i=1\)&lt;/span&gt;, then &lt;span class="math"&gt;\(P(I_i=1, I_j=1)\)&lt;/span&gt; = Probaility that &lt;span class="math"&gt;\(i^{th}, (i+1)^{th} \mathrm{and} (i+2)^{th}\)&lt;/span&gt; cards are different. For &lt;span class="math"&gt;\(i=2\)&lt;/span&gt; to &lt;span class="math"&gt;\(i={n-1}\)&lt;/span&gt;
+there are &lt;span class="math"&gt;\((n-2-1)=n-3\)&lt;/span&gt; such terms and &lt;span class="math"&gt;\(P(I_i,I_j=1)= pqp+qpq=pq\)&lt;/span&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Case 2: &lt;span class="math"&gt;\(j-i&amp;gt;=2\)&lt;/span&gt;, then &lt;span class="math"&gt;\(P(I_i=1,I_j=1) = P(I_i=1)P(I_j=1)\)&lt;/span&gt; , that is these events are independent unless they occur next to each other
+as in Case 1. and hence &lt;span class="math"&gt;\(P(I_i=1,I_j=1)=P(I_i=1)P(I_j=1) = (pq)^2\)&lt;/span&gt; and there are &lt;span class="math"&gt;\((n-4)\)&lt;/span&gt; such ways to choose&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Thus,
+&lt;span class="math"&gt;\(ER_n^2 = 1+6pq(n-2)+2\times((n-3)\times (pq)+(n-4)\times(pq)^2)\)&lt;/span&gt;
+Substitute in (skipping/TODO)
+&lt;span class="math"&gt;\(Var(R_n) = ER_n^2-(ER_n)^2\)&lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Problem 2&lt;/h2&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(X = \{\}X_1,X_2 \dots, X_n)\)&lt;/span&gt; and &lt;span class="math"&gt;\(Y=\sum_{i=1}^{N}c_iX_i\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;To determine :
+- Distribution of Y&lt;/p&gt;
+&lt;p&gt;iWe use characteristic functions&lt;/p&gt;
+&lt;p&gt;Using the &lt;a href="https://en.wikipedia.org/wiki/Normal_distribution#Fourier_transform_and_characteristic_function"&gt;characteristic function of a normal RV&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;$\phi_X(t) = E[e^{itX}] = e^{-it\mu- \frac{1}{2}\sigma^2t^2} = $&lt;/p&gt;
+&lt;p&gt;For multivariate case:&lt;/p&gt;
+&lt;p&gt;$\phi_X(\bf{t}) = E[e^{i\bf{t^T}X}] = e^{-i\bf{t^T}\mu- \frac{1}{2}\bf{t^T}\sum^2 \bf{t}} = $&lt;/p&gt;
+&lt;p&gt;Now, &lt;span class="math"&gt;\(Y=c^TX\)&lt;/span&gt; where &lt;span class="math"&gt;\(c=[c_1,c_2 \dots c_n]\)&lt;/span&gt; (&lt;span class="math"&gt;\(Y=\sum_{i=1}^{N}c_iX_i\)&lt;/span&gt;)&lt;/p&gt;
+&lt;p&gt;Thus,&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align}
+\phi_Y(\bf{t}) &amp;amp;= E[e^{i\bf{t^T}Y}]\\
+            &amp;amp;= E[e^{i\bf{t}c^TX}]\\
+            &amp;amp;= \phi_X(tc^T)\\
+            &amp;amp;=  e^{-ic^T\bf{t}\mu - \frac{1}{2}\bf{t}^Tc\sum^2 \bf{t}c^T}
+\end{align}
+$$&lt;/div&gt;
+&lt;p&gt;and thus comparing with the characteristic function we started with:&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(Y \sim N(c^T\mu, a\sum a^T)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;TODO: Check again the transposes&lt;/p&gt;
+&lt;h2&gt;Problem 3&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 07 Aug 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</guid></item><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h2&gt;Paper&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Define an indicator variable &lt;span class="math"&gt;\(I_i\)&lt;/span&gt; as:&lt;/p&gt;
