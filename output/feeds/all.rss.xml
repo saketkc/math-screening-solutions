@@ -1,5 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 10 Sep 2015 00:00:00 +0200</lastBuildDate><item><title>MATH505a 2013 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Sun, 21 Feb 2016 00:00:00 +0100</lastBuildDate><item><title>MATH505a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2014-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Problem 1&lt;/h1&gt;
+&lt;p&gt;Define &lt;/p&gt;
+&lt;div class="math"&gt;$$I_i = \begin{cases}
+1 &amp;amp; \text{Game $i$ and Game $i+1$ are won},\\
+0 &amp;amp; \text{otherwise}
+\end{cases}$$&lt;/div&gt;
+&lt;p&gt;Thus,
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+R &amp;amp;= \sum_{i=1}^{m-1}I_i\\
+ER &amp;amp;= \sum_{i=1}^{m-1}EI_i\\
+Var(R) &amp;amp;= \sum_{i=1}^{m-1}Var(I_i) + 2\sum_{i &amp;lt; j}Cov(I_i,U)
+\end{align*}
+$$&lt;/div&gt;
+&lt;h3&gt;Part 1.a&lt;/h3&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+ EI_i &amp;amp;= P(I_i=1) \\
+ &amp;amp;= a_ia_{i+1}\\
+ER &amp;amp;= \sum_i EI_i\\
+&amp;amp;=\sum_{i=1}^{m-1}a_ia_{i+1}
+\end{align*}
+$$&lt;/div&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+Var(I_i) &amp;amp;= E[I_i^2]-E[I_i]E[I_i]\\
+&amp;amp;= E[I_i](1-E[I_i])\\
+&amp;amp;= a_ia_{i+1}(1-a_ia_{i+1})
+\end{align*}
+$$&lt;/div&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+Cov(I_i,I_j) &amp;amp;= \begin{cases}
+0 &amp;amp; j-i\geq 2(i&amp;lt;j)\\
+E[I_{i}I_{i+1}]-E[I_i]E[I_{i+1}] &amp;amp; \text{otherwise}\\
+\end{cases}\\
+&amp;amp;= \begin{cases}
+0 &amp;amp; j-i\geq 2(i&amp;lt;j)\\
+a_ia_{i+1}a_{i+2}(1-a_{i+1}) &amp;amp; \text{otherwise}\\
+\end{cases}\\
+\end{align*}
+$$&lt;/div&gt;
+&lt;p&gt;Thus,
+&lt;/p&gt;
+&lt;div class="math"&gt;$$
+Var(R) = \sum_{i=1}^{m-1}a_ia_{i+1} + 2\sum_{i=1}^{m-2} a_ia_{i+1}a_{i+2}(1-a_{i+1})
+$$&lt;/div&gt;
+&lt;h3&gt;Part 1.b&lt;/h3&gt;
+&lt;p&gt;When &lt;span class="math"&gt;\(a_n=p=0.1\)&lt;/span&gt; &lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+ER &amp;amp;= \sum_{i=1}^{m-1}p^2\\
+&amp;amp;= (m-1)p^2\\
+Var(R) &amp;amp;= \sum_{i=1}^{m-1}a_ia_{i+1} + 2\sum_{i=1}^{m-2} a_ia_{i+1}a_{i+2}(1-a_{i+1})\\
+&amp;amp;= (m-1)p^2+2(m-2)p^3(1-p)
+\end{align*}
+$$&lt;/div&gt;
+&lt;h2&gt;Problem 2&lt;/h2&gt;
+&lt;div class="math"&gt;$$f(x) = x/2 \text{ for } 0 &amp;lt; x &amp;lt;2$$&lt;/div&gt;
+&lt;h3&gt;Part 2.a&lt;/h3&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(S=X_1+X_2\)&lt;/span&gt;
+Using &lt;a href="http://statweb.stanford.edu/~susan/courses/s116/node114.html"&gt;convolution theorem&lt;/a&gt;:&lt;/p&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+f_S(s) &amp;amp;= \int \frac{x}{2} \frac{s-x}{2} dx\\
+&amp;amp;0 &amp;lt; s-x &amp;lt; 2\\
+&amp;amp; 0 &amp;lt;x&amp;lt;2\\
+&amp;amp;\implies s-2 &amp;lt; x &amp;lt; s \text{ and } 0 &amp;lt; x &amp;lt; 2\\
+&amp;amp;\text{Case 1: } 0 &amp;lt; s &amp;lt; 2\  f_S(s) = \int_0^s \frac{x}{2} \frac{s-x}{2} dx = \frac{s^3}{24}\\
+&amp;amp;\text{ Case 2: }  2 &amp;lt; s &amp;lt; 4\  f_S(s) = \int_{s-2}^4 \frac{x}{2} \frac{s-x}{2} dx = \frac{1}{4}(\frac{s(4s-s^2)}{2}-\frac{(4^3-(s-2)^3)}{3})\\
+\end{align*}
+$$&lt;/div&gt;
+&lt;h3&gt;Part 2.b&lt;/h3&gt;
+&lt;div class="math"&gt;$$L = min(X_1, X_2, X_3, \dots X_{100})$$&lt;/div&gt;
+&lt;p&gt;$F_L = 1 - P(min(X_i) \geq y) = 1 - \prod_i P(X_i \geq y) = 1-\prod(1-P(X_i\leq y)) = 1- \big(1-\frac{y^2}{4}\big)^n $&lt;/p&gt;
+&lt;h3&gt;Part 2.c&lt;/h3&gt;
+&lt;div class="math"&gt;$$R=X_1/X_2$$&lt;/div&gt;
+&lt;div class="math"&gt;$$
+\begin{align*}
+P(X_1/X_2 \leq z) &amp;amp;= P(X_1 \leq zX_2)\\
+&amp;amp;= \int_0^{min(zx_2,2)} \frac{z^2x_2^2}{4}x_2 dx_2
+\end{align*}
+$$&lt;/div&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Sun, 21 Feb 2016 00:00:00 +0100</pubDate><guid>tag:www.saket-choudhary.me,2016-02-21:math-screening-solutions/math505a-2014-spring.html</guid></item><item><title>MATH505a 2013 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20131/20131_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;p&gt;Given: &lt;span class="math"&gt;\(E[X|Y]=X\ and \ E[Y|X]=X\)&lt;/span&gt;&lt;/p&gt;
@@ -35,11 +177,13 @@ which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="m
         indent = (screen.width &lt; 768) ? "0em" : indent;
         linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-    
+
     var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -49,6 +193,7 @@ which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="m
         "    displayAlign: '"+ align +"'," +
         "    displayIndent: '"+ indent +"'," +
         "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
         "    tex2jax: { " +
         "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
         "        displayMath: [ ['$$','$$'] ]," +
@@ -59,7 +204,23 @@ which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="m
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
-        "}); ";
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2013-spring.html</guid></item><item><title>MATH-541a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html</link><description>&lt;h2&gt;Source&lt;/h2&gt;
@@ -94,11 +255,13 @@ The likelihood function is given by:&lt;/p&gt;
         indent = (screen.width &lt; 768) ? "0em" : indent;
         linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-    
+
     var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -108,6 +271,7 @@ The likelihood function is given by:&lt;/p&gt;
         "    displayAlign: '"+ align +"'," +
         "    displayIndent: '"+ indent +"'," +
         "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
         "    tex2jax: { " +
         "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
         "        displayMath: [ ['$$','$$'] ]," +
@@ -118,7 +282,23 @@ The likelihood function is given by:&lt;/p&gt;
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
-        "}); ";
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 14 Aug 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-08-14:math-screening-solutions/math-541a-2014-spring.html</guid><category>MATH-541a</category><category>2014</category><category>Spring</category></item><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h2&gt;Paper&lt;/h2&gt;
@@ -215,11 +395,13 @@ $$&lt;/div&gt;
         indent = (screen.width &lt; 768) ? "0em" : indent;
         linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
     }
-    
+
     var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' &amp;&amp; location_protocol !== 'https') location_protocol = 'https:';
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
     mathjaxscript[(window.opera ? "innerHTML" : "text")] =
         "MathJax.Hub.Config({" +
         "    config: ['MMLorHTML.js']," +
@@ -229,6 +411,7 @@ $$&lt;/div&gt;
         "    displayAlign: '"+ align +"'," +
         "    displayIndent: '"+ indent +"'," +
         "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
         "    tex2jax: { " +
         "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
         "        displayMath: [ ['$$','$$'] ]," +
@@ -239,7 +422,23 @@ $$&lt;/div&gt;
         "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
         "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
         "    }, " +
-        "}); ";
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 07 Aug 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</guid></item></channel></rss>
