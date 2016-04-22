@@ -22,108 +22,105 @@
                     <li><a href="https://github.com/saketkc/math-screening-solutions/tree/master/content">Contribute</a></li>
                     <li><a href="../category/math-505a.html">MATH-505a</a></li>
                     <li><a href="../category/math-541a.html">MATH-541a</a></li>
+                    <li><a href="../category/rss-diploma-module1.html">RSS-Diploma-Module1</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../math505a-2014-spring.html">MATH505a 2014 Spring</a></h1>
+                    <h1 class="entry-title"><a href="../royal-statistical-society-graduate-diploma-module-1-2014.html">Royal Statistical Society Graduate Diploma Module 1- 2014</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2016-02-21T00:00:00+01:00">
-                Published: Sun 21 February 2016
+        <abbr class="published" title="2016-04-21T00:00:00+02:00">
+                Published: Thu 21 April 2016
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/saket-choudhary.html">Saket Choudhary</a>
         </address>
-<p>In <a href="../category/math-505a.html">MATH-505a</a>.</p>
+<p>In <a href="../category/rss-diploma-module1.html">RSS-Diploma-Module1</a>.</p>
 
 </footer><!-- /.post-info --><h1>Paper</h1>
-<p><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf">http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf</a></p>
+<p><a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf">Paper Link</a></p>
 <h1>Problem 1</h1>
-<p>Define </p>
-<div class="math">$$I_i = \begin{cases}
-1 &amp; \text{Game $i$ and Game $i+1$ are won},\\
-0 &amp; \text{otherwise}
-\end{cases}$$</div>
-<p>Thus,
+<h2>Problem (i)</h2>
+<div class="math">\begin{align*}
+F(x) &amp;= P(X \leq x\\
+&amp;= \sum_{A} P(X \leq x, A)\\
+&amp;= P(X \leq x, A) + P(X \leq x, A^c)\\
+&amp;= P(X \leq x|A)P(A) + P(X \leq x|A^c)P(A^c)\\
+&amp;= F_1(x)\theta + F_2(x)(1-\theta)
+ \end{align*}</div>
+<p>To deduce the next euqation, we simply differentiate the above:</p>
+<div class="math">\begin{align*}
+\frac{d}{dx} F(x) &amp;= \frac{d}{dx} F_1(x)\theta+F_2(x)(1-\theta)\\
+f(x) &amp;= f_1(x)\theta+f_2(x)(1-\theta)\\
+\int x f(x)dx &amp;= \int x\theta f_1(x)dx + \int x(1-\theta)f_2(x)dx\\
+E[X] &amp;= \theta \mu_1 + (1-\theta)\mu__1
+\end{align*}</div>
+<h2>Problem (ii)</h2>
+<div class="math">\begin{align*}
+W_i &amp;\sim \mathcal{N}(4.5,0.25)\\
+S_6=\sum_{i=1}^6 W_I &amp;\sim \mathcal{N}(27,1.5)\\
+P(S_6\leq 25) &amp;= P(\frac{S_6-27}{\sqrt{1.5}} \leq -\frac{2}{\sqrt{1.5}})\\
+&amp;= P(Z \leq -1.63)\\
+&amp;=0.056
+\end{align*}</div>
+<h2>Problem (iii)</h2>
+<div class="math">\begin{align*}
+EW &amp;= P(S_6 \leq 25)E[S_7] + P[S_6 \geq 25]E[S_6]\\
+&amp;= 0.056*31.5+(1-0.056)*27\\
+&amp;= 27.322
+\end{align*}</div>
+<h2>Problem (iv)</h2>
+<div class="math">\begin{align*}
+P(S_6 \leq 25) &amp;= 0.01\\
+P(Z \leq -\frac{2}{\sigma}) &amp;= 0.01
+\implies -\frac{2}{\sigma}&amp;= -2.33\\
+&amp;= 1.165
+\end{align*}</div>
+<h1>Problem 2</h1>
+<h2>Problem (i)</h2>
+<p>Median = <span class="math">\(\int_{-\infty}^m = \frac{1}{2}\)</span>
+Thus,
 </p>
-<div class="math">$$
-\begin{align*}
-R &amp;= \sum_{i=1}^{m-1}I_i\\
-ER &amp;= \sum_{i=1}^{m-1}EI_i\\
-Var(R) &amp;= \sum_{i=1}^{m-1}Var(I_i) + 2\sum_{i &lt; j}Cov(I_i,U)
-\end{align*}
-$$</div>
-<h3>Part 1.a</h3>
-<div class="math">$$
-\begin{align*}
- EI_i &amp;= P(I_i=1) \\
- &amp;= a_ia_{i+1}\\
-ER &amp;= \sum_i EI_i\\
-&amp;=\sum_{i=1}^{m-1}a_ia_{i+1}
-\end{align*}
-$$</div>
-<div class="math">$$
-\begin{align*}
-Var(I_i) &amp;= E[I_i^2]-E[I_i]E[I_i]\\
-&amp;= E[I_i](1-E[I_i])\\
-&amp;= a_ia_{i+1}(1-a_ia_{i+1})
-\end{align*}
-$$</div>
-<div class="math">$$
-\begin{align*}
-Cov(I_i,I_j) &amp;= \begin{cases}
-0 &amp; j-i\geq 2(i&lt;j)\\
-E[I_{i}I_{i+1}]-E[I_i]E[I_{i+1}] &amp; \text{otherwise}\\
-\end{cases}\\
-&amp;= \begin{cases}
-0 &amp; j-i\geq 2(i&lt;j)\\
-a_ia_{i+1}a_{i+2}(1-a_{i+1}) &amp; \text{otherwise}\\
-\end{cases}\\
-\end{align*}
-$$</div>
-<p>Thus,
-</p>
-<div class="math">$$
-Var(R) = \sum_{i=1}^{m-1}a_ia_{i+1} + 2\sum_{i=1}^{m-2} a_ia_{i+1}a_{i+2}(1-a_{i+1})
-$$</div>
-<h3>Part 1.b</h3>
-<p>When <span class="math">\(a_n=p=0.1\)</span> </p>
-<div class="math">$$
-\begin{align*}
-ER &amp;= \sum_{i=1}^{m-1}p^2\\
-&amp;= (m-1)p^2\\
-Var(R) &amp;= \sum_{i=1}^{m-1}a_ia_{i+1} + 2\sum_{i=1}^{m-2} a_ia_{i+1}a_{i+2}(1-a_{i+1})\\
-&amp;= (m-1)p^2+2(m-2)p^3(1-p)
-\end{align*}
-$$</div>
-<h2>Problem 2</h2>
-<div class="math">$$f(x) = x/2 \text{ for } 0 &lt; x &lt;2$$</div>
-<h3>Part 2.a</h3>
-<p><span class="math">\(S=X_1+X_2\)</span>
-Using <a href="http://statweb.stanford.edu/~susan/courses/s116/node114.html">convolution theorem</a>:</p>
-<div class="math">$$
-\begin{align*}
-f_S(s) &amp;= \int \frac{x}{2} \frac{s-x}{2} dx\\
-&amp;0 &lt; s-x &lt; 2\\
-&amp; 0 &lt;x&lt;2\\
-&amp;\implies s-2 &lt; x &lt; s \text{ and } 0 &lt; x &lt; 2\\
-&amp;\text{Case 1: } 0 &lt; s &lt; 2\  f_S(s) = \int_0^s \frac{x}{2} \frac{s-x}{2} dx = \frac{s^3}{24}\\
-&amp;\text{ Case 2: }  2 &lt; s &lt; 4\  f_S(s) = \int_{s-2}^4 \frac{x}{2} \frac{s-x}{2} dx = \frac{1}{4}(\frac{s(4s-s^2)}{2}-\frac{(4^3-(s-2)^3)}{3})\\
-\end{align*}
-$$</div>
-<h3>Part 2.b</h3>
-<div class="math">$$L = min(X_1, X_2, X_3, \dots X_{100})$$</div>
-<p>$F_L = 1 - P(min(X_i) \geq y) = 1 - \prod_i P(X_i \geq y) = 1-\prod(1-P(X_i\leq y)) = 1- \big(1-\frac{y^2}{4}\big)^n $</p>
-<h3>Part 2.c</h3>
-<div class="math">$$R=X_1/X_2$$</div>
-<div class="math">$$
-\begin{align*}
-P(X_1/X_2 \leq z) &amp;= P(X_1 \leq zX_2)\\
-&amp;= \int_0^{min(zx_2,2)} \frac{z^2x_2^2}{4}x_2 dx_2
-\end{align*}
-$$</div>
+<div class="math">\begin{align*}
+\int_{-\infty}^m xf(x) dx &amp;= \frac{1}{2}\\
+\int_{-p}^{\infty}
+ x f(-x) = \frac{1}{2}\\
+&amp;= \int_p^{\infty} xf(x)\\
+&amp;=  \int_{-p}^{\infty} xf(-x)dx\\
+\implies p &amp;= \\
+\implies p &amp;=0
+\end{align*}</div>
+<p>Thus median <span class="math">\(m=0\)</span></p>
+<h2>Problem (ii)</h2>
+<div class="math">\begin{align*}
+EX &amp;= \int_{-\infty}^{\infty}xf(x)dx \\
+&amp;= \int_{\infty}^{-\infty}-xf(-x)d(-x) \ x \longrightarrow -x\\
+&amp;= -\int_{-\infty}^{\infty}xf(-x)dx\\
+&amp;= -\int_{-\infty}^{\infty}xf(x)dx \text{ since } f(x)=f(-x) \\
+\implies E[X} &amp;=0
+\end{align*}</div>
+<h2>Problem (iii)</h2>
+<p><span class="math">\(Y=X^2\)</span></p>
+<div class="math">\begin{align*}
+E[XY] &amp;= E[X^3]\\
+&amp;= \int_{-\infty}^\infty x^3f(x)dx\\
+&amp;=0
+\end{align*}</div>
+<p><span class="math">\(Cov(X&lt;y)=E[XY]-E[X]E[Y] = 0\)</span> and hence <span class="math">\(X,Y\)</span> are uncorrelated</p>
+<h2>Problem (iv)</h2>
+<div class="math">\begin{align*}
+g(y) &amp;= f_X(\sqrt{y}) \frac{dx}{dy}\\
+&amp;= \frac{1}{2\sqrt{y}}f_X(\sqrt{y})\\
+\text{Note the typo in the original question where $\frac{1}{2}$ is issing}
+\end{align*}</div>
+<h1>Problem 3</h1>
+<h1>Problem 4</h1>
+<h1>Problem 5</h1>
+<h1>Problem 6</h1>
+<h1>Problem 7</h1>
+<h1>Problem 8</h1>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -186,6 +183,100 @@ $$</div>
                     <h1>Other articles</h1>
                     <hr />
                     <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="../math505a-2014-spring.html" rel="bookmark"
+                           title="Permalink to MATH505a 2014 Spring">MATH505a 2014 Spring</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-02-21T00:00:00+01:00">
+                Published: Sun 21 February 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="../author/saket-choudhary.html">Saket Choudhary</a>
+        </address>
+<p>In <a href="../category/math-505a.html">MATH-505a</a>.</p>
+
+</footer><!-- /.post-info -->                <h1>Paper</h1>
+<p><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf">http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf</a></p>
+<h1>Problem 1</h1>
+<p>Define </p>
+<div class="math">$$I_i = \begin{cases}
+1 &amp; \text{Game $i$ and Game $i+1$ are won},\\
+0 &amp; \text{otherwise}
+\end{cases}$$</div>
+<p>Thus,
+</p>
+<div class="math">$$
+\begin{align*}
+R &amp;= \sum_{i=1}^{m-1}I_i\\
+ER &amp;= \sum_{i=1}^{m-1}EI_i\\
+Var(R) &amp;= \sum_{i=1}^{m-1}Var(I_i) + 2\sum_{i &lt; j}Cov(I_i,U)
+\end{align*}
+$$ ...</div><script type='text/javascript'>if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+                <a class="readmore" href="../math505a-2014-spring.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>

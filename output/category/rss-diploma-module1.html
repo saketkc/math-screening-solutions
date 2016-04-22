@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>Screening Exam Solutions - 2014</title>
+        <title>Screening Exam Solutions - RSS-Diploma-Module1</title>
         <link rel="stylesheet" href="../theme/css/main.css" />
         <link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Screening Exam Solutions Atom Feed" />
         <link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Screening Exam Solutions RSS Feed" />
@@ -22,45 +22,105 @@
                     <li><a href="https://github.com/saketkc/math-screening-solutions/tree/master/content">Contribute</a></li>
                     <li><a href="../category/math-505a.html">MATH-505a</a></li>
                     <li><a href="../category/math-541a.html">MATH-541a</a></li>
-                    <li><a href="../category/rss-diploma-module1.html">RSS-Diploma-Module1</a></li>
+                    <li class="active"><a href="../category/rss-diploma-module1.html">RSS-Diploma-Module1</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../math-541a-2014-spring.html">MATH-541a 2014 Spring</a></h1>
+                    <h1 class="entry-title"><a href="../royal-statistical-society-graduate-diploma-module-1-2014.html">Royal Statistical Society Graduate Diploma Module 1- 2014</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2015-08-14T00:00:00+02:00">
-                Published: Fri 14 August 2015
+        <abbr class="published" title="2016-04-21T00:00:00+02:00">
+                Published: Thu 21 April 2016
         </abbr>
 
         <address class="vcard author">
                 By                         <a class="url fn" href="../author/saket-choudhary.html">Saket Choudhary</a>
         </address>
-<p>In <a href="../category/math-541a.html">MATH-541a</a>.</p>
-<p>tags: <a href="../tag/math-541a.html">MATH-541a</a> <a href="../tag/2014.html">2014</a> <a href="../tag/spring.html">Spring</a> </p>
-</footer><!-- /.post-info --><h2>Source</h2>
-<p><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf">http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf</a></p>
-<h2>Problem 1</h2>
-<p>Given:</p>
-<p><span class="math">\(x_{i,1}, x_{i,2}\)</span> :  Known values 
-For <span class="math">\(1  \leq i \leq n\)</span>:
-<span class="math">\(Z_i = \beta_1x_{i,1} +\epsilon_i $ and
-$Y_i = \beta_1x_{i,1} +\beta_2x_{i,2} + \epsilon_i\)</span>
-<span class="math">\(\epsilon_i \sim N(0,1)\)</span></p>
-<h3>(a)</h3>
-<p>Given <span class="math">\({\bf{Z}} =(Z_1,Z_2,\dots,Z_n)\)</span> find MLE estimate of <span class="math">\(\beta_1\)</span>:</p>
-<p>Since, <span class="math">\(\epsilon_i \sim N(0,1)\)</span> <span class="math">\(\implies\)</span> <span class="math">\(Z_i \sim N(\beta_1x_{i,1}, 1)\)</span> for given <span class="math">\(\beta_1\)</span>
-The likelihood function is given by:</p>
-<p><span class="math">\(L(\beta_1|\textbf{Z}) = \frac{e^{-\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2}}{(\sqrt{2\pi})^n}\)</span></p>
-<p><span class="math">\(LL = log(L(\beta_1|\textbf{Z})) = -\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2 - \frac{n}{2}log(2\pi)\)</span></p>
-<p><span class="math">\(\frac{dLL}{d\beta_1} = \sum_{i=1}^n (Z_i-\beta_1x_{i,1})x_{i,1}\)</span></p>
-<p>and hence</p>
-<p><span class="math">\(\hat\beta_1 = \frac{\sum Z_ix_{i,1}}{\sum x_{i,1}^2}\)</span></p>
-<p><span class="math">\(\frac{d^2LL}{d\beta_1} = -\sum x_{i,1}^2\)</span> and hence <span class="math">\(\hat \beta_1\)</span> is in fact attains the maxima.</p>
-<p>Now, <span class="math">\(E\hat\beta_1 = \frac{E(\sum Z_ix_{i,1})}{\sum x_{i,1}^2} = \frac{\sum x_{i,1}E(Z_i)}{\sum x_{i,1}^2} = \beta_1\)</span></p>
-<p>and hence the MLE estimate pf <span class="math">\(\hat \beta_1\)</span> is an unibased estimator of <span class="math">\(\beta_1\)</span></p>
-<h3>TODO Cramer-Rao Condition check?</h3>
+<p>In <a href="../category/rss-diploma-module1.html">RSS-Diploma-Module1</a>.</p>
+
+</footer><!-- /.post-info --><h1>Paper</h1>
+<p><a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf">Paper Link</a></p>
+<h1>Problem 1</h1>
+<h2>Problem (i)</h2>
+<div class="math">\begin{align*}
+F(x) &amp;= P(X \leq x\\
+&amp;= \sum_{A} P(X \leq x, A)\\
+&amp;= P(X \leq x, A) + P(X \leq x, A^c)\\
+&amp;= P(X \leq x|A)P(A) + P(X \leq x|A^c)P(A^c)\\
+&amp;= F_1(x)\theta + F_2(x)(1-\theta)
+ \end{align*}</div>
+<p>To deduce the next euqation, we simply differentiate the above:</p>
+<div class="math">\begin{align*}
+\frac{d}{dx} F(x) &amp;= \frac{d}{dx} F_1(x)\theta+F_2(x)(1-\theta)\\
+f(x) &amp;= f_1(x)\theta+f_2(x)(1-\theta)\\
+\int x f(x)dx &amp;= \int x\theta f_1(x)dx + \int x(1-\theta)f_2(x)dx\\
+E[X] &amp;= \theta \mu_1 + (1-\theta)\mu__1
+\end{align*}</div>
+<h2>Problem (ii)</h2>
+<div class="math">\begin{align*}
+W_i &amp;\sim \mathcal{N}(4.5,0.25)\\
+S_6=\sum_{i=1}^6 W_I &amp;\sim \mathcal{N}(27,1.5)\\
+P(S_6\leq 25) &amp;= P(\frac{S_6-27}{\sqrt{1.5}} \leq -\frac{2}{\sqrt{1.5}})\\
+&amp;= P(Z \leq -1.63)\\
+&amp;=0.056
+\end{align*}</div>
+<h2>Problem (iii)</h2>
+<div class="math">\begin{align*}
+EW &amp;= P(S_6 \leq 25)E[S_7] + P[S_6 \geq 25]E[S_6]\\
+&amp;= 0.056*31.5+(1-0.056)*27\\
+&amp;= 27.322
+\end{align*}</div>
+<h2>Problem (iv)</h2>
+<div class="math">\begin{align*}
+P(S_6 \leq 25) &amp;= 0.01\\
+P(Z \leq -\frac{2}{\sigma}) &amp;= 0.01
+\implies -\frac{2}{\sigma}&amp;= -2.33\\
+&amp;= 1.165
+\end{align*}</div>
+<h1>Problem 2</h1>
+<h2>Problem (i)</h2>
+<p>Median = <span class="math">\(\int_{-\infty}^m = \frac{1}{2}\)</span>
+Thus,
+</p>
+<div class="math">\begin{align*}
+\int_{-\infty}^m xf(x) dx &amp;= \frac{1}{2}\\
+\int_{-p}^{\infty}
+ x f(-x) = \frac{1}{2}\\
+&amp;= \int_p^{\infty} xf(x)\\
+&amp;=  \int_{-p}^{\infty} xf(-x)dx\\
+\implies p &amp;= \\
+\implies p &amp;=0
+\end{align*}</div>
+<p>Thus median <span class="math">\(m=0\)</span></p>
+<h2>Problem (ii)</h2>
+<div class="math">\begin{align*}
+EX &amp;= \int_{-\infty}^{\infty}xf(x)dx \\
+&amp;= \int_{\infty}^{-\infty}-xf(-x)d(-x) \ x \longrightarrow -x\\
+&amp;= -\int_{-\infty}^{\infty}xf(-x)dx\\
+&amp;= -\int_{-\infty}^{\infty}xf(x)dx \text{ since } f(x)=f(-x) \\
+\implies E[X} &amp;=0
+\end{align*}</div>
+<h2>Problem (iii)</h2>
+<p><span class="math">\(Y=X^2\)</span></p>
+<div class="math">\begin{align*}
+E[XY] &amp;= E[X^3]\\
+&amp;= \int_{-\infty}^\infty x^3f(x)dx\\
+&amp;=0
+\end{align*}</div>
+<p><span class="math">\(Cov(X&lt;y)=E[XY]-E[X]E[Y] = 0\)</span> and hence <span class="math">\(X,Y\)</span> are uncorrelated</p>
+<h2>Problem (iv)</h2>
+<div class="math">\begin{align*}
+g(y) &amp;= f_X(\sqrt{y}) \frac{dx}{dy}\\
+&amp;= \frac{1}{2\sqrt{y}}f_X(\sqrt{y})\\
+\text{Note the typo in the original question where $\frac{1}{2}$ is issing}
+\end{align*}</div>
+<h1>Problem 3</h1>
+<h1>Problem 4</h1>
+<h1>Problem 5</h1>
+<h1>Problem 6</h1>
+<h1>Problem 7</h1>
+<h1>Problem 8</h1>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",

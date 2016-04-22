@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>Screening Exam Solutions - 2014</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>MATH505a 2014 Spring</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
         <link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Screening Exam Solutions Atom Feed" />
         <link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.rss.xml" type="application/rss+xml" rel="alternate" title="Screening Exam Solutions RSS Feed" />
 
@@ -17,50 +17,120 @@
 <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
 </a>
         <header id="banner" class="body">
-                <h1><a href="../">Screening Exam Solutions </a></h1>
+                <h1><a href="./">Screening Exam Solutions </a></h1>
                 <nav><ul>
                     <li><a href="https://github.com/saketkc/math-screening-solutions/tree/master/content">Contribute</a></li>
-                    <li><a href="../category/math-505a.html">MATH-505a</a></li>
-                    <li><a href="../category/math-541a.html">MATH-541a</a></li>
-                    <li><a href="../category/rss-diploma-module1.html">RSS-Diploma-Module1</a></li>
+                    <li class="active"><a href="./category/math-505a.html">MATH-505a</a></li>
+                    <li><a href="./category/math-541a.html">MATH-541a</a></li>
+                    <li><a href="./category/rss-diploma-module1.html">RSS-Diploma-Module1</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="./math505a-2014-spring.html" rel="bookmark"
+           title="Permalink to MATH505a 2014 Spring">MATH505a 2014 Spring</a></h1>
+<a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="saketkc">Tweet</a><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="../math-541a-2014-spring.html">MATH-541a 2014 Spring</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2015-08-14T00:00:00+02:00">
-                Published: Fri 14 August 2015
+        <abbr class="published" title="2016-02-21T00:00:00+01:00">
+                Published: Sun 21 February 2016
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="../author/saket-choudhary.html">Saket Choudhary</a>
+                By                         <a class="url fn" href="./author/saket-choudhary.html">Saket Choudhary</a>
         </address>
-<p>In <a href="../category/math-541a.html">MATH-541a</a>.</p>
-<p>tags: <a href="../tag/math-541a.html">MATH-541a</a> <a href="../tag/2014.html">2014</a> <a href="../tag/spring.html">Spring</a> </p>
-</footer><!-- /.post-info --><h2>Source</h2>
-<p><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf">http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf</a></p>
-<h2>Problem 1</h2>
-<p>Given:</p>
-<p><span class="math">\(x_{i,1}, x_{i,2}\)</span> :  Known values 
-For <span class="math">\(1  \leq i \leq n\)</span>:
-<span class="math">\(Z_i = \beta_1x_{i,1} +\epsilon_i $ and
-$Y_i = \beta_1x_{i,1} +\beta_2x_{i,2} + \epsilon_i\)</span>
-<span class="math">\(\epsilon_i \sim N(0,1)\)</span></p>
-<h3>(a)</h3>
-<p>Given <span class="math">\({\bf{Z}} =(Z_1,Z_2,\dots,Z_n)\)</span> find MLE estimate of <span class="math">\(\beta_1\)</span>:</p>
-<p>Since, <span class="math">\(\epsilon_i \sim N(0,1)\)</span> <span class="math">\(\implies\)</span> <span class="math">\(Z_i \sim N(\beta_1x_{i,1}, 1)\)</span> for given <span class="math">\(\beta_1\)</span>
-The likelihood function is given by:</p>
-<p><span class="math">\(L(\beta_1|\textbf{Z}) = \frac{e^{-\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2}}{(\sqrt{2\pi})^n}\)</span></p>
-<p><span class="math">\(LL = log(L(\beta_1|\textbf{Z})) = -\sum_{i=1}^{n}\big(\frac{Z_i-\beta_1x_{i,1}}{2}\big)^2 - \frac{n}{2}log(2\pi)\)</span></p>
-<p><span class="math">\(\frac{dLL}{d\beta_1} = \sum_{i=1}^n (Z_i-\beta_1x_{i,1})x_{i,1}\)</span></p>
-<p>and hence</p>
-<p><span class="math">\(\hat\beta_1 = \frac{\sum Z_ix_{i,1}}{\sum x_{i,1}^2}\)</span></p>
-<p><span class="math">\(\frac{d^2LL}{d\beta_1} = -\sum x_{i,1}^2\)</span> and hence <span class="math">\(\hat \beta_1\)</span> is in fact attains the maxima.</p>
-<p>Now, <span class="math">\(E\hat\beta_1 = \frac{E(\sum Z_ix_{i,1})}{\sum x_{i,1}^2} = \frac{\sum x_{i,1}E(Z_i)}{\sum x_{i,1}^2} = \beta_1\)</span></p>
-<p>and hence the MLE estimate pf <span class="math">\(\hat \beta_1\)</span> is an unibased estimator of <span class="math">\(\beta_1\)</span></p>
-<h3>TODO Cramer-Rao Condition check?</h3>
+<p>In <a href="./category/math-505a.html">MATH-505a</a>.</p>
+
+</footer><!-- /.post-info -->      <h1>Paper</h1>
+<p><a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf">http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf</a></p>
+<h1>Problem 1</h1>
+<p>Define </p>
+<div class="math">$$I_i = \begin{cases}
+1 &amp; \text{Game $i$ and Game $i+1$ are won},\\
+0 &amp; \text{otherwise}
+\end{cases}$$</div>
+<p>Thus,
+</p>
+<div class="math">$$
+\begin{align*}
+R &amp;= \sum_{i=1}^{m-1}I_i\\
+ER &amp;= \sum_{i=1}^{m-1}EI_i\\
+Var(R) &amp;= \sum_{i=1}^{m-1}Var(I_i) + 2\sum_{i &lt; j}Cov(I_i,U)
+\end{align*}
+$$</div>
+<h3>Part 1.a</h3>
+<div class="math">$$
+\begin{align*}
+ EI_i &amp;= P(I_i=1) \\
+ &amp;= a_ia_{i+1}\\
+ER &amp;= \sum_i EI_i\\
+&amp;=\sum_{i=1}^{m-1}a_ia_{i+1}
+\end{align*}
+$$</div>
+<div class="math">$$
+\begin{align*}
+Var(I_i) &amp;= E[I_i^2]-E[I_i]E[I_i]\\
+&amp;= E[I_i](1-E[I_i])\\
+&amp;= a_ia_{i+1}(1-a_ia_{i+1})
+\end{align*}
+$$</div>
+<div class="math">$$
+\begin{align*}
+Cov(I_i,I_j) &amp;= \begin{cases}
+0 &amp; j-i\geq 2(i&lt;j)\\
+E[I_{i}I_{i+1}]-E[I_i]E[I_{i+1}] &amp; \text{otherwise}\\
+\end{cases}\\
+&amp;= \begin{cases}
+0 &amp; j-i\geq 2(i&lt;j)\\
+a_ia_{i+1}a_{i+2}(1-a_{i+1}) &amp; \text{otherwise}\\
+\end{cases}\\
+\end{align*}
+$$</div>
+<p>Thus,
+</p>
+<div class="math">$$
+Var(R) = \sum_{i=1}^{m-1}a_ia_{i+1} + 2\sum_{i=1}^{m-2} a_ia_{i+1}a_{i+2}(1-a_{i+1})
+$$</div>
+<h3>Part 1.b</h3>
+<p>When <span class="math">\(a_n=p=0.1\)</span> </p>
+<div class="math">$$
+\begin{align*}
+ER &amp;= \sum_{i=1}^{m-1}p^2\\
+&amp;= (m-1)p^2\\
+Var(R) &amp;= \sum_{i=1}^{m-1}a_ia_{i+1} + 2\sum_{i=1}^{m-2} a_ia_{i+1}a_{i+2}(1-a_{i+1})\\
+&amp;= (m-1)p^2+2(m-2)p^3(1-p)
+\end{align*}
+$$</div>
+<h2>Problem 2</h2>
+<div class="math">$$f(x) = x/2 \text{ for } 0 &lt; x &lt;2$$</div>
+<h3>Part 2.a</h3>
+<p><span class="math">\(S=X_1+X_2\)</span>
+Using <a href="http://statweb.stanford.edu/~susan/courses/s116/node114.html">convolution theorem</a>:</p>
+<div class="math">$$
+\begin{align*}
+f_S(s) &amp;= \int \frac{x}{2} \frac{s-x}{2} dx\\
+&amp;0 &lt; s-x &lt; 2\\
+&amp; 0 &lt;x&lt;2\\
+&amp;\implies s-2 &lt; x &lt; s \text{ and } 0 &lt; x &lt; 2\\
+&amp;\text{Case 1: } 0 &lt; s &lt; 2\  f_S(s) = \int_0^s \frac{x}{2} \frac{s-x}{2} dx = \frac{s^3}{24}\\
+&amp;\text{ Case 2: }  2 &lt; s &lt; 4\  f_S(s) = \int_{s-2}^4 \frac{x}{2} \frac{s-x}{2} dx = \frac{1}{4}(\frac{s(4s-s^2)}{2}-\frac{(4^3-(s-2)^3)}{3})\\
+\end{align*}
+$$</div>
+<h3>Part 2.b</h3>
+<div class="math">$$L = min(X_1, X_2, X_3, \dots X_{100})$$</div>
+<p>$F_L = 1 - P(min(X_i) \geq y) = 1 - \prod_i P(X_i \geq y) = 1-\prod(1-P(X_i\leq y)) = 1- \big(1-\frac{y^2}{4}\big)^n $</p>
+<h3>Part 2.c</h3>
+<div class="math">$$R=X_1/X_2$$</div>
+<div class="math">$$
+\begin{align*}
+P(X_1/X_2 \leq z) &amp;= P(X_1 \leq zX_2)\\
+&amp;= \int_0^{min(zx_2,2)} \frac{z^2x_2^2}{4}x_2 dx_2
+\end{align*}
+$$</div>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
@@ -117,8 +187,11 @@ The likelihood function is given by:</p>
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-</script>                </article>
-            </aside><!-- /#featured -->
+</script>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="social">
                         <h2>social</h2>
