@@ -1,4 +1,4 @@
-title: Royal Statistical Society Graduate Diploma Module 1- 2014
+title: Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions
 date: 2016-04-21
 
 # Paper
@@ -15,13 +15,15 @@ F(x) &= P(X \leq x\\
 &= F_1(x)\theta + F_2(x)(1-\theta)
  \end{align*}
 
-To deduce the next euqation, we simply differentiate the above:
+To deduce the next equation, we simply
+differentiate the above:
+
 
 \begin{align*}
 \frac{d}{dx} F(x) &= \frac{d}{dx} F_1(x)\theta+F_2(x)(1-\theta)\\
 f(x) &= f_1(x)\theta+f_2(x)(1-\theta)\\
 \int x f(x)dx &= \int x\theta f_1(x)dx + \int x(1-\theta)f_2(x)dx\\
-E[X] &= \theta \mu_1 + (1-\theta)\mu__1
+E[X] &= \theta \mu_1 + (1-\theta)\mu_2
 \end{align*}
 
 ## Problem (ii)
@@ -63,7 +65,6 @@ Thus,
  x f(-x) = \frac{1}{2}\\
 &= \int_p^{\infty} xf(x)\\
 &=  \int_{-p}^{\infty} xf(-x)dx\\
-\implies p &= \\
 \implies p &=0
 \end{align*}
 
@@ -78,7 +79,7 @@ EX &= \int_{-\infty}^{\infty}xf(x)dx \\
 &= \int_{\infty}^{-\infty}-xf(-x)d(-x) \ x \longrightarrow -x\\
 &= -\int_{-\infty}^{\infty}xf(-x)dx\\
 &= -\int_{-\infty}^{\infty}xf(x)dx \text{ since } f(x)=f(-x) \\
-\implies E[X} &=0
+\implies E[X] &=0
 \end{align*}
 
 ## Problem (iii)
