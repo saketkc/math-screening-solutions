@@ -50,7 +50,6 @@ Thus,
  x f(-x) = \frac{1}{2}\\
 &amp;amp;= \int_p^{\infty} xf(x)\\
 &amp;amp;=  \int_{-p}^{\infty} xf(-x)dx\\
-\implies p &amp;amp;= \\
 \implies p &amp;amp;=0
 \end{align*}&lt;/div&gt;
 &lt;p&gt;Thus median &lt;span class="math"&gt;\(m=0\)&lt;/span&gt;&lt;/p&gt;
@@ -60,7 +59,7 @@ EX &amp;amp;= \int_{-\infty}^{\infty}xf(x)dx \\
 &amp;amp;= \int_{\infty}^{-\infty}-xf(-x)d(-x) \ x \longrightarrow -x\\
 &amp;amp;= -\int_{-\infty}^{\infty}xf(-x)dx\\
 &amp;amp;= -\int_{-\infty}^{\infty}xf(x)dx \text{ since } f(x)=f(-x) \\
-\implies E[X} &amp;amp;=0
+\implies E[X] &amp;amp;=0
 \end{align*}&lt;/div&gt;
 &lt;h2&gt;Problem (iii)&lt;/h2&gt;
 &lt;p&gt;&lt;span class="math"&gt;\(Y=X^2\)&lt;/span&gt;&lt;/p&gt;
