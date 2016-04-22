@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/rss-diploma-module1.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 21 Apr 2016 00:00:00 +0200</lastBuildDate><item><title>Royal Statistical Society Graduate Diploma Module 1- 2014</title><link>http://www.saket-choudhary.me/math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/rss-diploma-module1.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 21 Apr 2016 00:00:00 +0200</lastBuildDate><item><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;h2&gt;Problem (i)&lt;/h2&gt;
@@ -10,12 +10,13 @@ F(x) &amp;amp;= P(X \leq x\\
 &amp;amp;= P(X \leq x|A)P(A) + P(X \leq x|A^c)P(A^c)\\
 &amp;amp;= F_1(x)\theta + F_2(x)(1-\theta)
  \end{align*}&lt;/div&gt;
-&lt;p&gt;To deduce the next euqation, we simply differentiate the above:&lt;/p&gt;
+&lt;p&gt;To deduce the next equation, we simply
+differentiate the above:&lt;/p&gt;
 &lt;div class="math"&gt;\begin{align*}
 \frac{d}{dx} F(x) &amp;amp;= \frac{d}{dx} F_1(x)\theta+F_2(x)(1-\theta)\\
 f(x) &amp;amp;= f_1(x)\theta+f_2(x)(1-\theta)\\
 \int x f(x)dx &amp;amp;= \int x\theta f_1(x)dx + \int x(1-\theta)f_2(x)dx\\
-E[X] &amp;amp;= \theta \mu_1 + (1-\theta)\mu__1
+E[X] &amp;amp;= \theta \mu_1 + (1-\theta)\mu__2
 \end{align*}&lt;/div&gt;
 &lt;h2&gt;Problem (ii)&lt;/h2&gt;
 &lt;div class="math"&gt;\begin{align*}
@@ -137,4 +138,4 @@ g(y) &amp;amp;= f_X(\sqrt{y}) \frac{dx}{dy}\\
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 21 Apr 2016 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2016-04-21:math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014.html</guid></item></channel></rss>
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 21 Apr 2016 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2016-04-21:math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</guid></item></channel></rss>
