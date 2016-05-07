@@ -104,16 +104,146 @@ g(y) &= f_X(\sqrt{y}) \frac{dx}{dy}\\
 
 # Problem 3
 
+## Problem 3.(i)
+\begin{align*}
+f(x,y) &= \frac{1}{x}e^{-x} \\
+f(x) &= \int_0^{x} f(x,y)dy\\
+&= e^{-x}\\
+f_{Y|X}(x)&=\frac{f(X=x,Y)}{f(X)}\\
+&= \frac{1}{x}
+\end{align*}
+
+## Problem 3.(ii)
+\begin{align*}
+E[X^mY^n] &= \int_{y}^ix^my^n\frac{1}{x}e^{-x} dxdyi\\
+&= \int_0^\infty x^{m-1e^{-xdx} \int_0^x y^mdy}\\
+&= \int_0^\infty x^{m-1+n+1}e^{-x}\frac{1}{n}\\
+&= \frac{(m+n)!}{n+1}
+\end{align*}
+
+## Problem 3.(iii)
+
+\begin{align*}
+E[X]&=1\\
+E[X^2] &= 2\\
+Var(X) &= 1\\
+E[Y]&= 1/2\\
+E[Y^2] &= 2/3\\
+Var(Y) &= 5/12
+\end{align*}
 
 # Problem 4
+
+## Problem 4.(i)
+
+\begin{tabular}{|c|c|c|}
+X1/X2 & 0 & 1\\
+0 &01.  &0.1\\
+1 & 0.3 &0.5
+\end{tabular}
+
+
+## Problem 4.(ii)
+\begin{align*}
+S_Y &= \{0, 1, 2, 3\}\\
+\end{align*}
+Idea: Start of with a random row and column in the table,
+Then keep sampling until there are 10 samples(Ignoring anything that is not in $S_Y$)
+
+## Problem 4.(iii)
+
+This is straightforward based on theses caseSs
+
+\begin{align*}i
+Y&=0 \implies X_1=0,X_2=0\\
+Y&=1 \implies X_1=0,X_2=1\\
+Y&=2 \implies X_1=1, X_2=0\\
+Y&=3 \implies X_1=1,X_2=1
+\end{align*}
+
+## Problem 4b
+
+TODO
 
 
 # Problem 5
 
+## Problem 5.(i)
+\begin{align*}
+cor(X_1,X_2) &= \frac{Cov(X_1,X_2)}{\sigma_1\sigma_2}\\
+&= \frac{2}{4}\\
+&= 1/2
+\end{align*}
+
+## Problem 5.(ii)
+
+\begin{align*}
+E[Y] &= -1+1 =0\\
+Var(Y) &= Var(X_1) + Var(X_2) + 2Cov(X_1,X_2)\\
+&= 21
+\end{align*}
+
+
+## Problem 5.(ii)
+Since $Y_1.Y_2$ are both normal, independnce requires just the covariance being zero.
+
+\begin{align*}
+Cov(Y_1,Y_2) &=0\\
+&= KVar(X_1)+ (k+1)Cov(X_1,X_2) + Var(X_2)\\
+&= 3k+18\\
+\implies k &=-6
+\end{align*}
+
+## Problem 5.(b)
+
+$E[\mathbf{Y}]=\mathbf{0}$
+
+$V=\begin{pmatrix}
+1/3 & 2/9 & 1/9 & 0 & \dots & 0\\
+2/9 & 2/9 & 1/9 & 0 & \dots & 0\\
+1/9 & 1/9 & 1/9 & 0 & \dots & 0\\
+0   & 0   & 0   & 1/3 & 2/9 & 1/9\\
+\end{pmatrix}$ 
+Essentiall th 3 rows block shifts every 4th row.
+
+Joint distribution of $Y_1,Y_2,\dots, Y_{n-2}$ follows a MVN with mean 0 and variance as the above matrix
 
 # Problem 6
+\begin{align*}
+M_X(t) &= E[e^{tX}]\\
+&= \int_0^\infty \frac{e^{tx} \theta^\alpha x^{\alpha-1} e^{-\theta x}}{\Gamma(\alpha)}dx\\
+&= \int_0^\infty \frac{(\theta-t)^\alpha}{(\theta-t)^\alpha} \frac{ \theta^\alpha x^{\alpha-1} e^{t-\theta x}}{\Gamma(\alpha)}\\
+&= \frac{\theta^\alpha}{(t-\theta)^\alpha}\\
+EX &= M_X'(0)\\
+&= \alpha\theta^\alpha(\theta-t)^{-\alpha-1}\\
+&= \alpha/\theta\\
+EX^2 &= M_X''(0)\\
+&= \alpha(\alpha-1)/\theta^2\\
+Var(X) = \alpha/\theta^2-\alpha(\alpha-1)/\theta^2\\
+&= \alpha/\theta^2
+\end{align*}
+
+## Problem 6.(ii)
+
+\begin{align*}
+M_X(t) &= \frac{\theta}{\theta-t}
+Z &= \sum_iX_i\\
+M_Z(t) &= \prod M_{X_i}(t)\\
+&= (\frac{\theta}{\theta-t})^n\\
+&\sim \Gamma(\theta,n)
+\end{align*}
+
+## Problem 6.(iii)
+
+Central Limit Theorem: 
+
+If $X_i$ represent random variables whose mgf exits in a neighborhood of 0
+and has finite first and second momements, then $\frac{\bar{X_n}-\mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0,1)$
+
+$\Gamma(n,\theta) \sim \mathcal{N}(n\sqrt{n}/\theta,n^2/\theta^2 )$
 
 # Problem 7
+
 
 
 # Problem 8
