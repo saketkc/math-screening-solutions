@@ -122,9 +122,112 @@ g(y) &amp;= f_X(\sqrt{y}) \frac{dx}{dy}\\
 \text{Note the typo in the original question where $\frac{1}{2}$ is issing}
 \end{align*}</div>
 <h1>Problem 3</h1>
+<h2>Problem 3.(i)</h2>
+<div class="math">\begin{align*}
+f(x,y) &amp;= \frac{1}{x}e^{-x} \\
+f(x) &amp;= \int_0^{x} f(x,y)dy\\
+&amp;= e^{-x}\\
+f_{Y|X}(x)&amp;=\frac{f(X=x,Y)}{f(X)}\\
+&amp;= \frac{1}{x}
+\end{align*}</div>
+<h2>Problem 3.(ii)</h2>
+<div class="math">\begin{align*}
+E[X^mY^n] &amp;= \int_{y}^ix^my^n\frac{1}{x}e^{-x} dxdyi\\
+&amp;= \int_0^\infty x^{m-1e^{-xdx} \int_0^x y^mdy}\\
+&amp;= \int_0^\infty x^{m-1+n+1}e^{-x}\frac{1}{n}\\
+&amp;= \frac{(m+n)!}{n+1}
+\end{align*}</div>
+<h2>Problem 3.(iii)</h2>
+<div class="math">\begin{align*}
+E[X]&amp;=1\\
+E[X^2] &amp;= 2\\
+Var(X) &amp;= 1\\
+E[Y]&amp;= 1/2\\
+E[Y^2] &amp;= 2/3\\
+Var(Y) &amp;= 5/12
+\end{align*}</div>
 <h1>Problem 4</h1>
+<h2>Problem 4.(i)</h2>
+<div class="math">\begin{tabular}{|c|c|c|}
+X1/X2 &amp; 0 &amp; 1\\
+0 &amp;01.  &amp;0.1\\
+1 &amp; 0.3 &amp;0.5
+\end{tabular}</div>
+<h2>Problem 4.(ii)</h2>
+<div class="math">\begin{align*}
+S_Y &amp;= \{0, 1, 2, 3\}\\
+\end{align*}</div>
+<p>
+Idea: Start of with a random row and column in the table,
+Then keep sampling until there are 10 samples(Ignoring anything that is not in <span class="math">\(S_Y\)</span>)</p>
+<h2>Problem 4.(iii)</h2>
+<p>This is straightforward based on theses caseSs</p>
+<div class="math">\begin{align*}i
+Y&amp;=0 \implies X_1=0,X_2=0\\
+Y&amp;=1 \implies X_1=0,X_2=1\\
+Y&amp;=2 \implies X_1=1, X_2=0\\
+Y&amp;=3 \implies X_1=1,X_2=1
+\end{align*}</div>
+<h2>Problem 4b</h2>
+<p>TODO</p>
 <h1>Problem 5</h1>
+<h2>Problem 5.(i)</h2>
+<div class="math">\begin{align*}
+cor(X_1,X_2) &amp;= \frac{Cov(X_1,X_2)}{\sigma_1\sigma_2}\\
+&amp;= \frac{2}{4}\\
+&amp;= 1/2
+\end{align*}</div>
+<h2>Problem 5.(ii)</h2>
+<div class="math">\begin{align*}
+E[Y] &amp;= -1+1 =0\\
+Var(Y) &amp;= Var(X_1) + Var(X_2) + 2Cov(X_1,X_2)\\
+&amp;= 21
+\end{align*}</div>
+<h2>Problem 5.(ii)</h2>
+<p>Since <span class="math">\(Y_1.Y_2\)</span> are both normal, independnce requires just the covariance being zero.</p>
+<div class="math">\begin{align*}
+Cov(Y_1,Y_2) &amp;=0\\
+&amp;= KVar(X_1)+ (k+1)Cov(X_1,X_2) + Var(X_2)\\
+&amp;= 3k+18\\
+\implies k &amp;=-6
+\end{align*}</div>
+<h2>Problem 5.(b)</h2>
+<p><span class="math">\(E[\mathbf{Y}]=\mathbf{0}\)</span></p>
+<p><span class="math">\(V=<div class="math">\begin{pmatrix}
+1/3 &amp; 2/9 &amp; 1/9 &amp; 0 &amp; \dots &amp; 0\\
+2/9 &amp; 2/9 &amp; 1/9 &amp; 0 &amp; \dots &amp; 0\\
+1/9 &amp; 1/9 &amp; 1/9 &amp; 0 &amp; \dots &amp; 0\\
+0   &amp; 0   &amp; 0   &amp; 1/3 &amp; 2/9 &amp; 1/9\\
+\end{pmatrix}</div>\)</span> 
+Essentiall th 3 rows block shifts every 4th row.</p>
+<p>Joint distribution of <span class="math">\(Y_1,Y_2,\dots, Y_{n-2}\)</span> follows a MVN with mean 0 and variance as the above matrix</p>
 <h1>Problem 6</h1>
+<div class="math">\begin{align*}
+M_X(t) &amp;= E[e^{tX}]\\
+&amp;= \int_0^\infty \frac{e^{tx} \theta^\alpha x^{\alpha-1} e^{-\theta x}}{\Gamma(\alpha)}dx\\
+&amp;= \int_0^\infty \frac{(\theta-t)^\alpha}{(\theta-t)^\alpha} \frac{ \theta^\alpha x^{\alpha-1} e^{t-\theta x}}{\Gamma(\alpha)}\\
+&amp;= \frac{\theta^\alpha}{(t-\theta)^\alpha}\\
+EX &amp;= M_X'(0)\\
+&amp;= \alpha\theta^\alpha(\theta-t)^{-\alpha-1}\\
+&amp;= \alpha/\theta\\
+EX^2 &amp;= M_X''(0)\\
+&amp;= \alpha(\alpha-1)/\theta^2\\
+Var(X) = \alpha/\theta^2-\alpha(\alpha-1)/\theta^2\\
+&amp;= \alpha/\theta^2
+\end{align*}</div>
+<h2>Problem 6.(ii)</h2>
+<div class="math">\begin{align*}
+M_X(t) &amp;= \frac{\theta}{\theta-t}
+Z &amp;= \sum_iX_i\\
+M_Z(t) &amp;= \prod M_{X_i}(t)\\
+&amp;= (\frac{\theta}{\theta-t})^n\\
+&amp;\sim \Gamma(\theta,n)
+\end{align*}</div>
+<h2>Problem 6.(iii)</h2>
+<p>Central Limit Theorem: </p>
+<p>If <span class="math">\(X_i\)</span> represent random variables whose mgf exits in a neighborhood of 0
+and has finite first and second momements, then <span class="math">\(\frac{\bar{X_n}-\mu}{\sigma/\sqrt{n}} \sim \mathcal{N}(0,1)\)</span></p>
+<p><span class="math">\(\Gamma(n,\theta) \sim \mathcal{N}(n\sqrt{n}/\theta,n^2/\theta^2 )\)</span></p>
 <h1>Problem 7</h1>
 <h1>Problem 8</h1>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
