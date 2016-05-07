@@ -244,6 +244,15 @@ $\Gamma(n,\theta) \sim \mathcal{N}(n\sqrt{n}/\theta,n^2/\theta^2 )$
 
 # Problem 7
 
+\begin{align*}
+P[X_2=1] &= \sum_{_{x_1}} P(X_2=1|X_=x_1)P(X_1=x__1)\\
+&= \frac{m}{n}*\frac{m-1}{n-1} + \frac{n-m}{n}\frac{m}{n-1}\\
+&= \frac{m}{n}\\
+P[X_3=1] &= \sum_{_{x_1,x_2}} P(X-_2=1X_2=x_2,X_1=x_1)\\
+\dots
+\end{align*}
+
+
 
 
 # Problem 8
