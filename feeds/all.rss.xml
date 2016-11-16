@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><atom:link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 21 Apr 2016 00:00:00 +0200</lastBuildDate><item><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+<rss version="2.0"><channel><title>Screening Exam Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/</link><description></description><lastBuildDate>Thu, 21 Apr 2016 00:00:00 +0200</lastBuildDate><item><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link>http://www.saket-choudhary.me/math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;h2&gt;Problem (i)&lt;/h2&gt;
@@ -247,7 +247,7 @@ P[X_3=1] &amp;amp;= \sum_{_{x_1,x_2}} P(X-_2=1X_2=x_2,X_1=x_1)\\
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 21 Apr 2016 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2016-04-21:math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</guid></item><item><title>MATH505a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2014-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 21 Apr 2016 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.saket-choudhary.me,2016-04-21:math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</guid></item><item><title>MATH505a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2014-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;p&gt;Define &lt;/p&gt;
@@ -389,7 +389,7 @@ $$&lt;/div&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Sun, 21 Feb 2016 00:00:00 +0100</pubDate><guid>tag:www.saket-choudhary.me,2016-02-21:math-screening-solutions/math505a-2014-spring.html</guid></item><item><title>MATH505a 2013 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Sun, 21 Feb 2016 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:www.saket-choudhary.me,2016-02-21:math-screening-solutions/math505a-2014-spring.html</guid></item><item><title>MATH505a 2013 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html</link><description>&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20131/20131_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;p&gt;Given: &lt;span class="math"&gt;\(E[X|Y]=X\ and \ E[Y|X]=X\)&lt;/span&gt;&lt;/p&gt;
@@ -471,7 +471,7 @@ which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="m
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2013-spring.html</guid></item><item><title>MATH-541a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html</link><description>&lt;h2&gt;Source&lt;/h2&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Thu, 10 Sep 2015 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2013-spring.html</guid></item><item><title>MATH-541a 2014 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html</link><description>&lt;h2&gt;Source&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Given:&lt;/p&gt;
@@ -549,7 +549,7 @@ The likelihood function is given by:&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 14 Aug 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-08-14:math-screening-solutions/math-541a-2014-spring.html</guid><category>MATH-541a</category><category>2014</category><category>Spring</category></item><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h2&gt;Paper&lt;/h2&gt;
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 14 Aug 2015 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.saket-choudhary.me,2015-08-14:math-screening-solutions/math-541a-2014-spring.html</guid><category>MATH-541a</category><category>2014</category><category>Spring</category></item><item><title>MATH505a 2006 Spring</title><link>http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html</link><description>&lt;h2&gt;Paper&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Define an indicator variable &lt;span class="math"&gt;\(I_i\)&lt;/span&gt; as:&lt;/p&gt;
@@ -689,4 +689,4 @@ $$&lt;/div&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 07 Aug 2015 00:00:00 +0200</pubDate><guid>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</guid></item></channel></rss>
+&lt;/script&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Saket Choudhary</dc:creator><pubDate>Fri, 07 Aug 2015 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</guid></item></channel></rss>

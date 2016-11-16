@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/math-screening-solutions/</id><updated>2016-04-21T00:00:00+02:00</updated><entry><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html" rel="alternate"></link><updated>2016-04-21T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2016-04-21:math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Screening Exam Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/" rel="alternate"></link><link href="http://www.saket-choudhary.me/math-screening-solutions//feeds/all.atom.xml" rel="self"></link><id>http://www.saket-choudhary.me/math-screening-solutions/</id><updated>2016-04-21T00:00:00+02:00</updated><entry><title>Royal Statistical Society Graduate Diploma Module 1- 2014 Solutions</title><link href="http://www.saket-choudhary.me/math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html" rel="alternate"></link><published>2016-04-21T00:00:00+02:00</published><updated>2016-04-21T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2016-04-21:math-screening-solutions/royal-statistical-society-graduate-diploma-module-1-2014-solutions.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www.rss.org.uk/Images/PDF/pro-dev/Exam past papers/2014/rss-grad-diploma-module1-2014.pdf"&gt;Paper Link&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;h2&gt;Problem (i)&lt;/h2&gt;
@@ -247,7 +247,7 @@ P[X_3=1] &amp;amp;= \sum_{_{x_1,x_2}} P(X-_2=1X_2=x_2,X_1=x_1)\\
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary></entry><entry><title>MATH505a 2014 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2014-spring.html" rel="alternate"></link><updated>2016-02-21T00:00:00+01:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2016-02-21:math-screening-solutions/math505a-2014-spring.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;/script&gt;</summary></entry><entry><title>MATH505a 2014 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2014-spring.html" rel="alternate"></link><published>2016-02-21T00:00:00+01:00</published><updated>2016-02-21T00:00:00+01:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2016-02-21:math-screening-solutions/math505a-2014-spring.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_505a.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;p&gt;Define &lt;/p&gt;
@@ -389,7 +389,7 @@ $$&lt;/div&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary></entry><entry><title>MATH505a 2013 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html" rel="alternate"></link><updated>2015-09-10T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2013-spring.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
+&lt;/script&gt;</summary></entry><entry><title>MATH505a 2013 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2013-spring.html" rel="alternate"></link><published>2015-09-10T00:00:00+02:00</published><updated>2015-09-10T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-09-10:math-screening-solutions/math505a-2013-spring.html</id><summary type="html">&lt;h1&gt;Paper&lt;/h1&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20131/20131_505a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h1&gt;Problem 1&lt;/h1&gt;
 &lt;p&gt;Given: &lt;span class="math"&gt;\(E[X|Y]=X\ and \ E[Y|X]=X\)&lt;/span&gt;&lt;/p&gt;
@@ -471,7 +471,7 @@ which implies &lt;span class="math"&gt;\(X=Y\)&lt;/span&gt; or &lt;span class="m
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary></entry><entry><title>MATH-541a 2014 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html" rel="alternate"></link><updated>2015-08-14T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-14:math-screening-solutions/math-541a-2014-spring.html</id><summary type="html">&lt;h2&gt;Source&lt;/h2&gt;
+&lt;/script&gt;</summary></entry><entry><title>MATH-541a 2014 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math-541a-2014-spring.html" rel="alternate"></link><published>2015-08-14T00:00:00+02:00</published><updated>2015-08-14T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-14:math-screening-solutions/math-541a-2014-spring.html</id><summary type="html">&lt;h2&gt;Source&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20141/20141_541a.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Given:&lt;/p&gt;
@@ -549,7 +549,7 @@ The likelihood function is given by:&lt;/p&gt;
         "}";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
-&lt;/script&gt;</summary><category term="MATH-541a"></category><category term="2014"></category><category term="Spring"></category></entry><entry><title>MATH505a 2006 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html" rel="alternate"></link><updated>2015-08-07T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</id><summary type="html">&lt;h2&gt;Paper&lt;/h2&gt;
+&lt;/script&gt;</summary><category term="MATH-541a"></category><category term="2014"></category><category term="Spring"></category></entry><entry><title>MATH505a 2006 Spring</title><link href="http://www.saket-choudhary.me/math-screening-solutions/math505a-2006-spring.html" rel="alternate"></link><published>2015-08-07T00:00:00+02:00</published><updated>2015-08-07T00:00:00+02:00</updated><author><name>Saket Choudhary</name></author><id>tag:www.saket-choudhary.me,2015-08-07:math-screening-solutions/math505a-2006-spring.html</id><summary type="html">&lt;h2&gt;Paper&lt;/h2&gt;
 &lt;p&gt;&lt;a href="http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf"&gt;http://www-bcf.usc.edu/~mathgp/quals/20061/505aspring06.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;Problem 1&lt;/h2&gt;
 &lt;p&gt;Define an indicator variable &lt;span class="math"&gt;\(I_i\)&lt;/span&gt; as:&lt;/p&gt;
